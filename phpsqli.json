@@ -1,0 +1,1412 @@
+[
+    [
+        "$this->pdo->query($sql)",
+        "query",
+        "$pdo->query($req)",
+        "$req = \"update murs set $set_req where mur_pos_cod = $case\"",
+        "$case = $tab_infos_case[0]",
+        "$tab_infos_case = explode('|', $infos_case)",
+        "foreach ($tab_modifs as $infos_case) {\n                $tab_infos_case = explode('|', $infos_case);\n                $case = $tab_infos_case[0];\n                if ($case == \"\") continue;\n                $req_case = \"select pos_type_aff, coalesce(mur_type, -1) as mur_type, pos_decor, pos_decor_dessus, coalesce(pos_modif_pa_dep, 0) as pa_dep, coalesce(pos_ter_cod, 0) as ter_cod\n\t\t\t\t\tfrom positions left outer join murs on mur_pos_cod = pos_cod\n\t\t\t\t\twhere pos_cod = :case AND pos_etage = :admin_etage\";\n                $stmt = $pdo->prepare($req_case);\n                $stmt = $pdo->execute(array(\":case\" => $case,\n                    \":admin_etage\" => $admin_etage), $stmt);\n\n                if ($result = $stmt->fetch()) {\n                    $mur_ancien = $result['mur_type'];\n                    $modifs_case = explode(',', $tab_infos_case[1]);\n                    $set_case = array();    // on regroupe les changements qui s’effectuent sur une même case\n                    $set_mur = array();        // on regroupe les changements qui s’effectuent sur un même mur\n\n                    foreach ($modifs_case as $une_modif) {\n                        $donnees = explode('=', $une_modif);\n                        $type = $donnees[0];\n                        if ($type == \"\") continue;\n                        $valeur = $donnees[1];\n                        switch ($type) {\n                            case 'f': // fonds\n                                $set_case[] = \"pos_type_aff = $valeur\";\n                                $cpt_fond++;\n                                break;\n                            case 'd': // décors\n                                $set_case[] = \"pos_decor = $valeur\";\n                                $cpt_dec++;\n                                break;\n                            case 's': // décors superposés\n                                $set_case[] = \"pos_decor_dessus = $valeur\";\n                                $cpt_des++;\n                                break;\n                            case 'p': // passages autorisés\n                                $set_case[] = \"pos_passage_autorise = $valeur\";\n                                $cpt_pas++;\n                                break;\n                            case 'v': // pvp autorisé\n                                $set_case[] = \"pos_pvp = '\" . (($valeur) ? 'O' : 'N') . \"'\";\n                                $cpt_pvp++;\n                                break;\n                            case 'a': // entree arène\n                                $set_case[] = \"pos_entree_arene = '\" . (($valeur) ? 'O' : 'N') . \"'\";\n                                $cpt_arn++;\n                                break;\n                            case 'm': // murs\n                                $req = '';\n                                if ($valeur == 0)    // suppression de mur\n                                    $req = \"delete from murs where mur_pos_cod = $case\";\n                                elseif ($mur_ancien == -1)    // ajout de mur\n                                    $req = \"insert into murs (mur_pos_cod, mur_type, mur_tangible) values ($case, $valeur, 'O') \";\n                                else                // et modif de mur\n                                    $set_mur[] = \"mur_type = $valeur\";\n                                $cpt_mur++;\n                                if ($req !== '')\n                                    $pdo->query($req);\n                                break;\n                            case 'c': // mur creusable\n                                $set_mur[] = \"mur_creusable = '\" . (($valeur) ? 'O' : 'N') . \"'\";\n                                $cpt_cre++;\n                                break;\n                            case 't': // mur tangible\n                                $set_mur[] = \"mur_tangible = '\" . (($valeur) ? 'O' : 'N') . \"'\";\n                                $cpt_tan++;\n                                break;\n                            case 'g': // ground = terrain\n                                $set_case[] = \"pos_ter_cod = \" . (int)$valeur ;\n                                $cpt_ter++;\n                                break;\n                            case 'b': // Bonus/malus de déplacment (modif pa)\n                                $set_case[] = \"pos_modif_pa_dep = \" . (int)$valeur ;\n                                $cpt_dep++;\n                                break;\n                        }\n                    }\n                    $set_req = implode(',', $set_case);\n                    if ($set_req !== \"\") {\n                        $req = \"update positions set $set_req where pos_cod = $case\";\n                        $pdo->query($req);\n                    }\n                    $set_req = implode(',', $set_mur);\n                    if ($set_req !== \"\") {\n                        $req = \"update murs set $set_req where mur_pos_cod = $case\";\n                        $pdo->query($req);\n                    }\n                } else {\n                    $cpt_erreur++;\n                }\n            }",
+        "$tab_modifs = explode(';', $modifs)",
+        "$modifs      = $_REQUEST['modifs']"
+    ],
+    [
+        "mysqli_query($GLOBALS[\"___mysqli_ston\"],  $query )",
+        "$query  = \"SELECT * FROM `users` WHERE user = '$user' AND password = '$pass';\"",
+        "$user = $_GET[ 'username' ]"
+    ],
+    [
+        "mysqli_query($GLOBALS[\"___mysqli_ston\"],  $query )",
+        "$query  = \"SELECT first_name, last_name FROM users WHERE user_id = '$id';\"",
+        "$id = $_REQUEST[ 'id' ]"
+    ],
+    [
+        "mysqli_query($GLOBALS[\"___mysqli_ston\"],  $getid )",
+        "$getid  = \"SELECT first_name, last_name FROM users WHERE user_id = '$id' LIMIT 1;\"",
+        "$id = $_COOKIE[ 'id' ]"
+    ],
+    [
+        "mysqli_query($GLOBALS[\"___mysqli_ston\"],  $getid )",
+        "$getid  = \"SELECT first_name, last_name FROM users WHERE user_id = '$id';\"",
+        "$id = $_GET[ 'id' ]"
+    ],
+    [
+        "$this->getEntityManager()->getConnection()->prepare('insert into demonstrator_allocations values ' . implode(',', $values))",
+        "setAssignments",
+        "$this->timetableEntryRepository->setAssignments($assignments)",
+        "$values = []",
+        "$request->getContent()"
+    ],
+    [
+        "$this->getDoctrine()->getRepository(Department::class)->find($departmentId)",
+        "$departmentId = $request->query->get('department')"
+    ],
+    [
+        "$this->getDoctrine()->getRepository(Semester::class)->find($semesterId)",
+        "$semesterId = $request->query->get('semester')"
+    ],
+    [
+        "mysql_query(\"SELECT * FROM myTable WHERE id = \" . $id)",
+        "$id = $_GET['id']"
+    ],
+    [
+        "$this->find(['subdir' => $subdir, 'filename' => $filename])",
+        "retrieveByUUID",
+        "$this->fotoRepository->retrieveByUUID($refuuid)",
+        "$request->request->get('refuuid')"
+    ],
+    [
+        "$this->find(['subdir' => $subdir, 'filename' => $filename])",
+        "get",
+        "$this->fotoRepository->get($album->subdir, $filename)",
+        "$request->request->get('foto')"
+    ],
+    [
+        "DB::select(\"SELECT fecha  FROM historial e, hotel h WHERE e.fecha BETWEEN '$dateInicio' AND '$dateFin' AND e.Hotel_idHotel = h.idHotel AND h.nombre_hotel = '$hotelGrafica'\")",
+        "$hotelGrafica = $request -> get('hotelGrafica')",
+        "$dateFin = $request -> get('dateFin')",
+        "$dateInicio = $request -> get('dateInicio')"
+    ],
+    [
+        "DB::select(\"SELECT DISTINCT month(fecha) AS months FROM historial WHERE year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(nacionales) as 'nacionales' , SUM(extranjeros) as 'extranjeros' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '5 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(nacionales) as 'nacionales' , SUM(extranjeros) as 'extranjeros' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '4 Estrellas'AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(nacionales) as 'nacionales' , SUM(extranjeros) as 'extranjeros' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '3 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(nacionales) as 'nacionales' , SUM(extranjeros) as 'extranjeros' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '2 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(nacionales) as 'nacionales' , SUM(extranjeros) as 'extranjeros' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '1 Estrella' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.tarifa_promedio) as 'tarifa_promedio' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '5 Estrellas' AND e.tipo_tarifa = 'Por habitacion' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.tarifa_promedio) as 'tarifa_promedio' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '4 Estrellas' AND e.tipo_tarifa = 'Por habitacion' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.tarifa_promedio) as 'tarifa_promedio' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '3 Estrellas' AND e.tipo_tarifa = 'Por habitacion' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.tarifa_promedio) as 'tarifa_promedio' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '2 Estrellas' AND e.tipo_tarifa = 'Por habitacion' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.tarifa_promedio) as 'tarifa_promedio' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '1 Estrella' AND e.tipo_tarifa = 'Por habitacion' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.tarifa_promedio) as 'tarifa_promedio' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '5 Estrellas' AND e.tipo_tarifa = 'Por persona' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.tarifa_promedio) as 'tarifa_promedio' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '4 Estrellas' AND e.tipo_tarifa = 'Por persona' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.tarifa_promedio) as 'tarifa_promedio' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '3 Estrellas' AND e.tipo_tarifa = 'Por persona' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.tarifa_promedio) as 'tarifa_promedio' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '2 Estrellas' AND e.tipo_tarifa = 'Por persona' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.tarifa_promedio) as 'tarifa_promedio' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '1 Estrella' AND e.tipo_tarifa = 'Por persona' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(habitaciones_ocupadas) as 'hab_ocu', SUM(habitaciones_disponibles) as 'hab_disp' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '5 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(habitaciones_ocupadas) as 'hab_ocu', SUM(habitaciones_disponibles) as 'hab_disp' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '4 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(habitaciones_ocupadas) as 'hab_ocu', SUM(habitaciones_disponibles) as 'hab_disp' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '3 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(habitaciones_ocupadas) as 'hab_ocu', SUM(habitaciones_disponibles) as 'hab_disp' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '2 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(habitaciones_ocupadas) as 'hab_ocu', SUM(habitaciones_disponibles) as 'hab_disp' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '1 Estrella' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.revpar) as 'revpar' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '5 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.revpar) as 'revpar' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '4 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.revpar) as 'revpar' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '3 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.revpar) as 'revpar' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '2 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT COUNT(e.idHistorial) as 'registros', SUM(e.revpar) as 'revpar' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '1 Estrella' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(e.pernoctaciones) as 'pernoctaciones', SUM(e.checkins)  AS 'checkins' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '5 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(e.pernoctaciones) as 'pernoctaciones', SUM(e.checkins)  AS 'checkins' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '4 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(e.pernoctaciones) as 'pernoctaciones', SUM(e.checkins)  AS 'checkins' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '3 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(e.pernoctaciones) as 'pernoctaciones', SUM(e.checkins)  AS 'checkins' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '2 Estrellas' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "DB::select(\"SELECT SUM(e.pernoctaciones) as 'pernoctaciones', SUM(e.checkins)  AS 'checkins' from historial e, hotel h where e.Hotel_idHotel = h.idHotel AND categoria = '1 Estrella' AND year(fecha) = $anio\")",
+        "$anio =$request -> get('anioE')"
+    ],
+    [
+        "eY1 =[]; ",
+        "$varGrafica = '';",
+        "$hotelGrafica = '';",
+        "$dateFin = '';",
+        "$tipoGrafica = '';"
+    ],
+    [
+        "DB::select(\"SELECT  $varGrafica FROM historial e, hotel h WHERE e.fecha BETWEEN '$dateInicio' AND '$dateFin' AND e.Hotel_idHotel = h.idHotel AND h.nombre_hotel = '$hotelGrafica'\")",
+        "$hotelGrafica = $request -> get('hotelGrafica')",
+        "$dateFin = $request -> get('dateFin')",
+        "$dateInicio = $request -> get('dateInicio')",
+        "$varArrayGrafica[$i]",
+        "$varArrayGrafica = $request -> get('varGrafica')"
+    ],
+    [
+        "DB::select(\"SELECT* FROM historial e, hotel h WHERE e.Hotel_idHotel = h.idHotel AND h.nombre_hotel = '$hotelSelect'\")",
+        "$hotelSelect =$request -> get('filtroHotel')"
+    ],
+    [
+        "($this->_db->prepare($sql))",
+        "parentPrepare",
+        "$this->parentPrepare($sql)",
+        "prex",
+        "($this->prex($sql, $params, TRUE, $log))",
+        "preQuery",
+        "$this->dbhr->preQuery($sql)",
+        "$sql = \"SELECT locations.name, locations.geometry, locations.ourgeometry, locations.id, AsText(locations_spatial.geometry) AS geom, ST_Contains(locations_spatial.geometry, POINT({$loc['lng']},{$loc['lat']})) AS within, ST_Distance(locations_spatial.geometry, POINT({$loc['lng']},{$loc['lat']})) AS dist FROM locations_spatial INNER JOIN  `locations` ON locations.id = locations_spatial.locationid LEFT OUTER JOIN locations_excluded ON locations_excluded.locationid = locations.id WHERE MBRWithin(locations_spatial.geometry, GeomFromText('$poly')) AND osm_place = $osmonly AND type != 'Postcode' AND ST_Dimension(locations_spatial.geometry) = 2 AND locations_excluded.locationid IS NULL HAVING id != $id AND GetMaxDimension(CASE WHEN ourgeometry IS NOT NULL THEN ourgeometry ELSE geometry END) < \" . Location::TOO_LARGE . \" AND GetMaxDimension(CASE WHEN ourgeometry IS NOT NULL THEN ourgeometry ELSE geometry END) > \" . Location::TOO_SMALL . \" ORDER BY within DESC, dist ASC LIMIT 1;\"",
+        "setParents",
+        "$this->setParents($id, $osmparentsonly)",
+        "create",
+        "$l->create(NULL, $name, 'Polygon', $polygon, $osmparentsonly, TRUE)",
+        "$osmparentsonly = array_key_exists('osmparentsonly', $_REQUEST) ? $_REQUEST['osmparentsonly'] : 1"
+    ],
+    [
+        "MyPDO::instance()->query($sql)",
+        "run",
+        "\\DB::run($sql)",
+        "$sql = \"SELECT `Name` FROM `ConComPositions` WHERE PositionID = $id\"",
+        "getPositionName",
+        "getPositionName($_REQUEST['Position'])"
+    ],
+    [
+        "MyPDO::instance()->prepare($sql)",
+        "run",
+        "\\DB::run($sql)",
+        "$sql = \"SELECT `Name` FROM `ConComPositions` WHERE PositionID = $id\"",
+        "getPositionName",
+        "getPositionName($_REQUEST['Position'])"
+    ],
+    [
+        "DB::table($this->table)\n            ->where($query)\n            ->update($newData)",
+        "UpdateQuery",
+        "$CommentsModel->UpdateQuery(\n            [\n                \"id\" => $commentId,\n            ],\n            [\n                \"comment\" => $commentText,\n            ]\n        )",
+        "[\n                \"comment\" => $commentText,\n            ]",
+        "$request->input(\"newComment\")"
+    ],
+    [
+        "$result->whereRaw($where)",
+        "$where = isset($query[\"where\"]) ? $query[\"where\"] : null",
+        "SelectQuery",
+        "$this->SelectQuery($query)",
+        "\"email_address = '$email'\"",
+        "getByEmail",
+        "$UserModel->getByEmail($email)",
+        "$email = $request->input(\"email\")"
+    ],
+    [
+        "ng $cacheKey The key associated with the data to update",
+        "sing $query",
+        " => \"id = $commentId AND user_id = $user->id\",\n            \"limit\" => 1,\n        ]);\n        if (\n          ",
+        "\n        if (\n         ",
+        ""
+    ],
+    [
+        "mysqli_query(OpenCon(),$query)",
+        "$query=\"select * from users where username= '\".$username.\"' and password='\".$password.\"'\"",
+        "$password = $_POST['password']",
+        "$username = $_POST['username']"
+    ],
+    [
+        "mysqli_query($conn, $sql)",
+        "$sql.=\" OR employee_age LIKE '\".$requestData['search']['value'].\"%' )\"",
+        "$requestData['search']['value']",
+        "$requestData['search']['value']",
+        "$requestData['search']"
+    ],
+    [
+        "mysqli_query($conn, $sql)",
+        "$sql.=\" ORDER BY \". $columns[$requestData['order'][0]['column']].\"   \".$requestData['order'][0]['dir'].\"  LIMIT \".$requestData['start'].\" ,\".$requestData['length'].\"   \"",
+        "$requestData['start']"
+    ],
+    [
+        "pg_query($con,$sqlcas)",
+        "$sqlcas=\"SELECT id, \n tbl_victim.entered_date, \n\ttbl_victim.source_of_record, \n\ttbl_victim.record_disable, \n\ttbl_victim.victim_id, \n\ttbl_victim.victim_report_date, \n\ttbl_victim.sex, \n\ttbl_victim.sex_text, \n\ttbl_victim.date_of_birth, \n\ttbl_victim.age, \n\ttbl_victim.nationality_type, \n\ttbl_victim.nationality_type_text, \n\ttbl_victim.nationality, \n\ttbl_victim.nationality_text, \n\ttbl_victim.victim_status, \n\ttbl_victim.victim_status_text, \n\ttbl_victim.victim_injury, \n\ttbl_victim.victim_injury_text, \n\ttbl_victim.cause_of_accident, \n\ttbl_victim.cause_of_accident_text, \n\ttbl_victim.activity_at_time_of_accident, \n\ttbl_victim.activity_at_time_of_accident_text, \n\ttbl_victim.icd_11_coding, \n\ttbl_victim.icd_11_coding_text, \n\ttbl_victim.injury_severity, \n\ttbl_victim.injury_severity_text, \n\ttbl_victim.casevac_method, \n\ttbl_victim.casevac_method_text, \n\ttbl_victim.casevac_rating, \n\ttbl_victim.casevac_rating_text, \n\ttbl_victim.occupation, \n\ttbl_victim.occupation_text, \n\ttbl_victim.ppeyesnoe, \n\ttbl_victim.dataentrydate, \n\ttbl_victim.mannerofdeath, \n\ttbl_victim.ppeeffectiveness, \n\ttbl_victim.accidentally_touched, \n\ttbl_victim.area_cleared_by_victim, \n\ttbl_victim.demining_function, \n\ttbl_victim.general_comment, \n\ttbl_victim.intentionally_touched, \n\ttbl_victim.marital_status, \n\ttbl_victim.number_of_dependents_age_0_to_18, \n\ttbl_victim.number_of_dependents_age_19_to_55, \n\ttbl_victim.number_of_dependents_older_than_55, \n\ttbl_victim.ordnance_found_or_destroyed_by_victim, \n\ttbl_victim.other_problems, \n\ttbl_victim.re_employ_victim, \n\ttbl_victim.time_on_post, \n\ttbl_victim.time_range_to_first_medical_facility, \n\ttbl_victim.time_range_to_hospital, \n\ttbl_victim.time_since_leave, \n\ttbl_victim.time_since_training, \n\ttbl_victim.victim_breadwinner, \n\ttbl_victim.victim_worked_in_area, \n\ttbl_victim.country, \n\ttbl_victim.casevac_conducted_by, \n\ttbl_victim.casevac_response_time, \n\ttbl_victim.casevac_provider_received_first_aid_training\n\t\nFROM \ttbl_victim\nwhere accident_id='$accid'\"",
+        "$accid=$_REQUEST['rpt']"
+    ],
+    [
+        "pg_query($con, \"SELECT left(tbl_accident.accident_date::TEXT,4) as ac_year, count(tbl_victim.id) as stat FROM tbl_victim, tbl_accident\n                                    where tbl_accident.accident_id=tbl_victim.accident_id and tbl_victim.country like '$country' and  tbl_victim.record_disable = 0 \n                                    GROUP BY ac_year ORDER BY stat DESC\tLIMIT 5\")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, \"SELECT COUNT(sex_text) FROM tbl_victim WHERE UPPER(sex_text) = 'FEMALE' and country like '\".$country.\"' and record_disable = 0 \")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, \"SELECT COUNT(sex_text) FROM tbl_victim WHERE UPPER(sex_text) = 'MALE' and country like '\".$country.\"' and record_disable = 0 \")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, \"SELECT COUNT(sex_text) FROM tbl_victim WHERE UPPER(sex_text) NOT IN ( 'MALE','FEMALE') and country like '\".$country.\"' and record_disable = 0 \")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, $sql_vicinjured)",
+        "$sql_vicinjured=\"SELECT COUNT(victim_status_text) FROM tbl_victim WHERE UPPER(victim_status_text) = 'INJURED' and country like '\".$country.\"' and record_disable = 0 \"",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, $sql_vicdeceased)",
+        "$sql_vicdeceased=\"SELECT COUNT(victim_status_text) FROM tbl_victim WHERE UPPER(victim_status_text) = 'DEATH' and country like '\".$country.\"' and record_disable = 0 \"",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, $sql_vicdeceased)",
+        "$sql_vicdeceased=\"SELECT COUNT(victim_status_text) FROM tbl_victim WHERE UPPER(victim_status_text) NOT IN ('INJURED','DEATH') and country like '\".$country.\"' and record_disable = 0 \"",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, \"SELECT sex_text,\tCount(tbl_victim.id) as stat FROM tbl_victim where country like '$country' and record_disable = 0 GROUP BY sex_text ORDER BY stat desc\")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, \"SELECT victim_status_text , Count(tbl_victim.id) as stat FROM tbl_victim where country like '$country' and record_disable = 0 GROUP BY victim_status_text ORDER BY stat desc\")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, \"SELECT accident_time, COUNT(id) as daytime_count FROM tbl_accident WHERE event_country like '$country' and record_disable = 0  GROUP BY accident_time ORDER by daytime_count DESC\")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con,$sqlreports)",
+        "$sqlreports=\"SELECT id, accident_date, numberpersoninvolved AS casualties FROM tbl_accident where tbl_accident.event_country LIKE '\".$country.\"' and record_disable = 0  ORDER BY accident_date desc\"",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, \"SELECT left(accident_date::TEXT,4) as ac_year,\tcount(id) as stat\nFROM\t tbl_accident\nwhere event_country like '\".$country.\"'\tand record_disable = 0 \n    GROUP BY\tac_year\n    ORDER BY ac_year ASC\")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, \"Select \n                                    uni.country, sum(injured) as injured, sum(death) as death, SUM(injured + death) as total\n                                    FROM\n                                    (\n                                    (SELECT tbl_victim.country, COUNT(tbl_victim.victim_status_text) as injured, 0 as death\n                                    FROM tbl_victim,tbl_accident WHERE  tbl_victim.accident_id= tbl_accident.accident_id and victim_status_text='Injured' and accident_date >='$startDate' and accident_date<= '$endDate' and country like '$country' and tbl_victim.record_disable = 0\n                                    GROUP BY tbl_victim.country)\n                                            \n                                    UNION\n                                    (SELECT tbl_victim.country, 0 as injured, COUNT(tbl_victim.victim_status_text) as death\n                                    FROM tbl_victim ,tbl_accident WHERE  tbl_victim.accident_id= tbl_accident.accident_id and victim_status_text='Death'  and accident_date >='$startDate' and accident_date<= '$endDate' and country like '$country' and tbl_victim.record_disable = 0\n                                    GROUP BY tbl_victim.country)\n                                    \n                                    ) as uni\n                                            \n                                    GROUP BY country\n                                    ORDER BY total desc\")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT date_trunc('year', accident_date) AS event_year, count(accident_date) as year_reports, sum(NULLIF(numberpersoninvolved, '')::integer) as year_casualties FROM tbl_accident WHERE event_country like '$country' and record_disable = 0 GROUP BY event_year ORDER BY event_year\")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, \"SELECT Count(id) FROM tbl_accident WHERE areatype ='Road' and  accident_date >='$startDate' and accident_date<= '$endDate' and event_country like '$country' and record_disable = 0 \")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT Count(id) FROM tbl_accident WHERE areatype ='Field' and accident_date >='$startDate' and accident_date<= '$endDate' and event_country like '$country' and record_disable = 0 \")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT Count(id) FROM tbl_accident WHERE areatype ='Agriculture' and accident_date >='$startDate' and accident_date<= '$endDate' and event_country like '$country' and record_disable = 0 \")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT Count(id) FROM tbl_accident WHERE areatype ='Unknown' and accident_date >='$startDate' and accident_date<= '$endDate' and event_country like '$country' and record_disable = 0 \")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT Count(id) FROM tbl_accident WHERE areatype ='Path' and accident_date >='$startDate' and accident_date<= '$endDate' and event_country like '$country' and record_disable = 0 \")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT Count(id) FROM tbl_accident WHERE areatype ='City' and accident_date >='$startDate' and accident_date<= '$endDate' and event_country like '$country' and record_disable = 0 \")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT Count(tbl_victim.id) FROM tbl_victim,tbl_accident WHERE sex_text ='Female' and tbl_victim.accident_id= tbl_accident.accident_id and accident_date >='$startDate' and accident_date<= '$endDate' and country like '$country' and tbl_victim.record_disable = 0 \" )",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT Count(tbl_victim.id) FROM tbl_victim,tbl_accident WHERE sex_text ='Male' and tbl_victim.accident_id= tbl_accident.accident_id and accident_date >='$startDate' and accident_date<= '$endDate' and country like '$country' and tbl_victim.record_disable = 0 \")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT Count(tbl_victim.id) FROM tbl_victim ,tbl_accident WHERE sex_text not in ( 'Female', 'Male') and tbl_victim.accident_id= tbl_accident.accident_id and accident_date >='$startDate' and accident_date<= '$endDate' and country like '$country' and tbl_victim.record_disable = 0 \" )",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT MAX(date_trunc('year', accident_date)) AS newest_year, MIN(date_trunc('year', accident_date)) AS oldest_year FROM tbl_accident where  accident_date >='$startDate' and accident_date<= '$endDate' and event_country like '$country'  and record_disable = 0 \")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT COUNT(victim_status_text) FROM tbl_victim WHERE UPPER(victim_status_text) = 'INJURED' and country like '$country'  and tbl_victim.record_disable = 0 \")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, \"SELECT COUNT(victim_status_text) FROM tbl_victim WHERE UPPER(victim_status_text) = 'DEATH' and country like '$country'  and tbl_victim.record_disable = 0 \")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con, \"SELECT COUNT(victim_status_text) FROM tbl_victim WHERE UPPER(victim_status_text) NOT IN ('INJURED','DEATH') and country like '$country'  and tbl_victim.record_disable = 0 \")",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "pg_query($con,\"SELECT\tcase  \n                                        when tbl_victim.time_range_to_first_medical_facility in ('Not Specified', 'Unknown','N/A') \tthen  'Unknown' \n                                        else time_range_to_first_medical_facility End as timerange,\n                                        count(tbl_victim.time_range_to_first_medical_facility) as stat\n                                    FROM\ttbl_victim, tbl_accident\n                                        where time_range_to_first_medical_facility is not null and tbl_victim.accident_id= tbl_accident.accident_id and accident_date >='$startDate' and accident_date<= '$endDate' and country like '$country'  and tbl_victim.record_disable = 0 \n                                        GROUP BY  timerange\tORDER BY timerange\")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT left(accident_date::TEXT,4) as ac_year,\tcount(tbl_victim.id) as stat\nFROM\t tbl_accident, tbl_victim\nwhere tbl_victim.accident_id= tbl_accident.accident_id  and tbl_victim.record_disable = 0 \n and accident_date >= '$startDate' and accident_date<= '$endDate' and (tbl_victim.country like '$country' or tbl_accident.event_country like '$country')\n    GROUP BY\tac_year\n    ORDER BY ac_year ASC\")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT left(accident_date::TEXT,4) as ac_year,\tcount(id) as stat\nFROM\t tbl_accident\nwhere  accident_date >='$startDate' and accident_date<= '$endDate' and event_country like '$country' and record_disable = 0 \n    GROUP BY\tac_year\n    ORDER BY ac_year ASC\")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con, \"SELECT areatype , Count(areatype) as stat FROM tbl_accident \nwhere areatype is not null and accident_date >='$startDate' and accident_date<= '$endDate' and event_country like '$country'  and record_disable = 0 \nGROUP BY areatype\")",
+        "$startDate=$_REQUEST['sd']"
+    ],
+    [
+        "pg_query($con,$sqlacc)",
+        "$sqlacc=\"SELECT id, \n\ttbl_accident.entered_date, \n\ttbl_accident.accident_report_date, \n\ttbl_accident.event_country, \n\ttbl_accident.event_province, \n\ttbl_accident.event_district, \n\ttbl_accident.type_of_place, \n\ttbl_accident.accident_date, \n\ttbl_accident.accident_time, \n\ttbl_accident.demininig_accident, \n\ttbl_accident.eo_type, \n\ttbl_accident.eo_type_text, \n\ttbl_accident.eo_category, \n\ttbl_accident.eo_category_text, \n\ttbl_accident.eo_sub_category, \n\ttbl_accident.eo_sub_category_text, \n\ttbl_accident.eo_model, \n\ttbl_accident.immediate_cause, \n\ttbl_accident.underlying_cause, \n\ttbl_accident.root_cause, \n\ttbl_accident.contributing_factors, \n\ttbl_accident.land_classification, \n\ttbl_accident.land_classification_text, \n\ttbl_accident.cisr_aid_id, \n\ttbl_accident.accident_attachemnt, \n\ttbl_accident.admin_level_0, \n\ttbl_accident.admin_level_0_text, \n\ttbl_accident.admin_level_1, \n\ttbl_accident.admin_level_1_text, \n\ttbl_accident.mineuxomarked, \n\ttbl_accident.numberpersoninvolved, \n\ttbl_accident.maactivitytype, \n\ttbl_accident.areatype, \n\ttbl_accident.accidentdescription, \n\ttbl_accident.rapid_organisation_type, \n\ttbl_accident.demining_area_type, \n\ttbl_accident.demining_asset, \n\ttbl_accident.slope, \n\ttbl_accident.vegetation_density, \n\ttbl_accident.temperature, \n\ttbl_accident.wind_speed, \n\ttbl_accident.depth_of_ordnance, \n\ttbl_accident.soil_characterisation, \n\ttbl_accident.ground_composition, \n\ttbl_accident.soil_compaction, \n\ttbl_accident.metal_debris_level, \n\ttbl_accident.magnetic_ferrous_soil_content, \n\ttbl_accident.victim_guids, \n\ttbl_accident.accident_attachemnt, \n\ttbl_accident.event_type_text, \n\ttbl_accident.reported_to_nmaa_text, \n\ttbl_accident.mineuxomarked_text, \n\ttbl_accident.maactivitytype_text, \n\ttbl_accident.areatype_text, \n\ttbl_accident.demining_area_type_text, \n\ttbl_accident.demining_asset_text, \n\ttbl_accident.slope_text, \n\ttbl_accident.vegetation_density_text, \n\ttbl_accident.temperature_text, \n\ttbl_accident.wind_speed_text, \n\ttbl_accident.depth_of_ordnance_text, \n\ttbl_accident.soil_characterisation_text, \n\ttbl_accident.ground_composition_text, \n\ttbl_accident.soil_compaction_text, \n\ttbl_accident.metal_debris_level_text, \n\ttbl_accident.magnetic_ferrous_soil_content_text\nFROM\n\ttbl_accident\nWHERE id = '\".$accid.\"'\"",
+        "$accid=$_REQUEST['rpt']"
+    ],
+    [
+        "pg_query($con,$sqlatt)",
+        "$sqlatt=\"SELECT\nattachment_name, \nattachment_path, \nattachment_type, \nattachment_original_name\nFROM tbl_attachments\nWHERE attachment_belong_to_id = '.$accid.' AND record_disable < 1 AND record_deleted < 1\"",
+        "$accid=$_REQUEST['rpt']"
+    ],
+    [
+        "pg_query($con, $sqlage)",
+        "$sqlage = $sqlage.\" AND country LIKE '$country' GROUP BY country\"",
+        "$country=$_REQUEST['country']"
+    ],
+    [
+        "im_db_query()($con,$querytogazetteer",
+        "$querytogazetteer=\"select * from gazetteer where gazetteer_guid='\".$_REQUEST[\"id\"].\"'\"",
+        "$_REQUEST[\"id\"]"
+    ],
+    [
+        "im_db_query()($con,$sql_polygons",
+        "$sql_polygons=\"SELECT * \n\t\t\t\t  FROM tbl_z_cr_form_v1_sub_im_geocontrol \n\t\t\t\t  WHERE \".$id_filter.\"\n\t\t\t\t\t\tim_polygone_no ='\".$row_records['im_polygone_no'].\"' AND\n\t\t\t\t\t\tbelong_to_id ='\".$row_records['belong_to_id'].\"' AND\n\t\t\t\t\t\tim_pointtype_text IN ('Start Point', 'Turning Point', 'End Point')\n \t\t\t\t order by belong_to_id, record_sort \"",
+        "$_REQUEST['id']"
+    ],
+    [
+        "im_db_query()($con,$sql",
+        "$sql=\"SELECT im_polygone_no,belong_to_id\n\t\t      FROM tbl_z_cr_form_v1_sub_im_geocontrol \n\t\t\t  WHERE \".$id_filter.\"\n\t\t\t\t\tim_pointtype_text IN ('Start Point', 'Turning Point', 'End Point')\n\t\t\t GROUP BY\n\t\t\t\t\tbelong_to_id,im_polygone_no\n\t\t\t order by belong_to_id, record_sort \"",
+        "$_REQUEST['id']"
+    ],
+    [
+        "im_db_query()($con,$sql_point",
+        "$sql_point=\"SELECT * \n\t\t\t\t\t  FROM tbl_z_cr_form_v1_sub_im_geocontrol \n\t\t\t\t\t  WHERE  \".$id_filter.\"\n\t\t\t\t\t\t\tim_pointtype_text NOT IN ('Start Point', 'Turning Point', 'End Point')\n \t\t\t\t\t order by belong_to_id, record_sort \"",
+        "$_REQUEST['id']"
+    ],
+    [
+        "im_db_query()($con,$querytogazetteer_addnode",
+        "$querytogazetteer_addnode=\"INSERT INTO gazetteer VALUES ('\".karzan_guid().\"','', '7f00-0001-1301a136cd0-87020cb-270b-16','7f00-0001-1301a136e38-13edf5b5-270c-b','\".$_REQUEST[\"name\"].\"','1','','','','','','')\"",
+        "$_REQUEST[\"name\"]"
+    ],
+    [
+        "im_db_query()($con,$querytogazetteer_nextnode",
+        "$querytogazetteer_nextnode=\"select * from gazetteer where parentgazetteer_guid='\".$_REQUEST[\"id\"].\"'\"",
+        "$_REQUEST[\"id\"]"
+    ],
+    [
+        "im_db_query()($con,$querytogazetteer_addnode",
+        "$querytogazetteer_addnode=\"INSERT INTO gazetteer VALUES ('\".karzan_guid().\"','','\".$_REQUEST[\"nodeparent\"].\"','\".$nodeleve.\"','\".$_REQUEST[\"name\"].\"','1','','','','','','')\"",
+        "$_REQUEST[\"name\"]"
+    ],
+    [
+        "im_db_query()($con,$getparentlevel",
+        "$getparentlevel=\"select * from gazetteer where trim(gazetteer_guid)=trim('\".$_REQUEST[\"nodeparent\"].\"')\"",
+        "$_REQUEST[\"nodeparent\"]"
+    ],
+    [
+        "im_db_query()($con,$querytogazetteer",
+        "$querytogazetteer=\"select * from gazetteer where gazetteer_guid='\".$_REQUEST[\"id\"].\"'\"",
+        "$_REQUEST[\"id\"]"
+    ],
+    [
+        "im_db_query()($con,$querytogazetteer_node",
+        "$querytogazetteer_node=\"select * from gazetteer where parentgazetteer_guid='\".$parent.\"'\"",
+        "$parent = $_REQUEST[\"parent\"]"
+    ],
+    [
+        "im_db_query()($con,$update_control",
+        "$update_control=\" UPDATE tbl_form_creator SET \n\t\t\t\t\t\t\t\t\t\tform_field_disable=0 ,\n\t\t\t\t\t\t\t\t\t\t\".k_system_fields(\"values_edit\",k_system_log($id,\"tbl_form_creator\",\"no_of_edit\"),$current_date,\"system\",\"control enabled\").\"\n\t\t\t\t\t\tWHERE   id='\".$id.\"'  \"",
+        "$id=$_REQUEST['cid']"
+    ],
+    [
+        "im_db_query()($con,$update_control",
+        "$update_control=\" UPDATE tbl_form_creator SET \n\t\t\t\t\t\t\t\tform_show_in_view_page=1,\n\t\t\t\t\t\t\t\t\".k_system_fields(\"values_edit\",k_system_log($id,\"tbl_form_creator\",\"no_of_edit\"),$current_date,\"system\",\"control show in gridview\").\"\n\t\t\t\t\t\t\tWHERE   id='\".$id.\"'  \"",
+        "$id=$_REQUEST['cid']"
+    ],
+    [
+        "im_db_query()($con,$update_control",
+        "$update_control=\" UPDATE tbl_form_creator SET \n\t\t\t\t\t\t\t\t\tform_field_disable=1,\n\t\t\t\t\t\t\t\t\t\".k_system_fields(\"values_edit\",k_system_log($id,\"tbl_form_creator\",\"no_of_edit\"),$current_date,\"system\",\"control disabled\").\"\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t  WHERE   id='\".$id.\"'  \"",
+        "$id=$_REQUEST['cid']"
+    ],
+    [
+        "im_db_query()($con,$update_control",
+        "$update_control=\" UPDATE tbl_form_creator SET \n\t\t\t\t\t\t\t\tform_show_in_view_page=0,\n\t\t\t\t\t\t\t\t\".k_system_fields(\"values_edit\",k_system_log($id,\"tbl_form_creator\",\"no_of_edit\"),$current_date,\"system\",\"control hide in gridview\").\"\n\t\t\t\t\t\t\tWHERE   id='\".$id.\"'  \"",
+        "$id=$_REQUEST['cid']"
+    ],
+    [
+        "im_db_query()($con, $query",
+        "$query = \"UPDATE daily_rssreader SET category = 2 WHERE id = '{$id}'\"",
+        "$id = $_GET['id']"
+    ],
+    [
+        "im_db_query()($con, $select_feeds",
+        "$select_feeds   = \"SELECT * FROM daily_rssreader WHERE  \".$date_selected.\" ORDER BY category, f_date DESC\"",
+        "$custom_date_end =  $_POST['end_date']",
+        "$custom_date_start =  $_POST['start_date']"
+    ],
+    [
+        "mysqli_query($con, $query)",
+        "$query = \"UPDATE daily_rssreader SET category = 2 WHERE id = '{$id}'\"",
+        "$id = $_GET['id']"
+    ],
+    [
+        "mysqli_query($con, $query)",
+        "$query = \"UPDATE daily_rssreader SET category = 2 WHERE id = '{$id}'\"",
+        "$id = $_GET['id']"
+    ],
+    [
+        "mysqli_query($con, $select_feeds)",
+        "$select_feeds   = \"SELECT * FROM daily_rssreader WHERE  \".$date_selected.\" ORDER BY category, f_date DESC\"",
+        "$custom_date_end =  $_POST['end_date']",
+        "$custom_date_start =  $_POST['start_date']"
+    ],
+    [
+        "mysqli_query($con, $query)",
+        "$query = \"UPDATE daily_rssreader SET category = 2 WHERE id = '{$id}'\"",
+        "$id = $_GET['id']"
+    ],
+    [
+        "mysqli_query($con, $select_feeds)",
+        "$select_feeds   = \"SELECT * FROM daily_rssreader WHERE  \".$date_selected.\" ORDER BY category, f_date DESC\"",
+        "$custom_date_end =  $_POST['end_date']",
+        "$custom_date_start =  $_POST['start_date']"
+    ],
+    [
+        "im_db_query()($con,\"SELECT * FROM tbl_lookup where sub_id='\".$_GET['type'].\"' AND LOWER($l_val) LIKE '%\".strtoupper($_GET['name_startsWith']).\"%'   order by l_val ASC limit 10\"",
+        ".$_GET['type'"
+    ],
+    [
+        "mysql_query(\"SELECT * FROM tbl_lookup where sub_id='\".$_GET['type'].\"' AND LOWER(l_val) LIKE '%\".strtoupper($_GET['name_startsWith']).\"%'   order by l_val ASC limit 10\")",
+        "$_GET['type']"
+    ],
+    [
+        "im_db_query($query)",
+        "$query = \"UPDATE dragdrop SET listorder = \" . $count . \" WHERE id = \" . $idval",
+        "foreach ($array as $idval) {\n\t\t$query = \"UPDATE dragdrop SET listorder = \" . $count . \" WHERE id = \" . $idval;\n\t\tim_db_query($query) or die('Error, insert query failed'); //was a mysql_query\n\t\t$count ++;\t\n\t}",
+        "$array\t= $_POST['arrayorder']"
+    ],
+    [
+        "mysql_query($sql_attachments)",
+        "$sql_attachments=\"SELECT   attachment_name , attachment_path FROM tbl_attachments WHERE  id in ( \".$_REQUEST['id'].\" ) AND record_disable = 0 \"",
+        "$_REQUEST['id']"
+    ],
+    [
+        "mysqli_query($GLOBALS['db'], $sql)",
+        "$sql = 'INSERT INTO tags\n\t\t\t\t\t\tSET bill_id=' . $bill_id . ', tag=\"' . $tag[$i] . '\",\n\t\t\t\t\t\tip=\"' . $_SERVER['REMOTE_ADDR'] . '\", user_id=\n\t\t\t\t\t\t\t(SELECT id\n\t\t\t\t\t\t\tFROM users\n\t\t\t\t\t\t\tWHERE cookie_hash = \"' . $_SESSION['id'] . '\"),\n\t\t\t\t\t\tdate_created=now()'",
+        "$tag[$i]",
+        "$tag = explode(',', $tags)",
+        "$tags = $_POST['tags']",
+        "$bill_id = $_POST['bill_id']",
+        "$_POST['bill_id']"
+    ],
+    [
+        "mysqli_query($GLOBALS['db'], $sql)",
+        "$sql = 'SELECT bill_id AS id\n                FROM dashboard_bills\n                WHERE id=' . $_POST['id']",
+        "$_POST['id']"
+    ],
+    [
+        "mysqli_query($GLOBALS['db'], $sql)",
+        "$sql .= ', notify=\"' . $form_data['notify'] . '\"'",
+        "$_POST['form_data']['name']"
+    ],
+    [
+        "mysqli_query($GLOBALS['db'], $sql)",
+        "$sql = 'SELECT dashboard_portfolios.id, dashboard_portfolios.hash, dashboard_portfolios.name,\n\t\tdashboard_portfolios.notes, users.name AS user_name, dashboard_user_data.organization,\n\t\tusers.url\n\t\tFROM dashboard_portfolios\n\t\tLEFT JOIN users\n\t\t\tON dashboard_portfolios.user_id = users.id\n\t\tLEFT JOIN dashboard_user_data\n\t\t\tON users.id = dashboard_user_data.user_id\n\t\tWHERE dashboard_portfolios.public = \"y\" AND dashboard_portfolios.hash=\"' . $hash . '\"'",
+        "$hash = $_GET['hash']"
+    ],
+    [
+        "mysqli_query($GLOBALS['db'], $sql)",
+        "$sql = 'INSERT INTO polls\n\t\t\tSET bill_id=' . $poll['bill_id'] . ', vote=\"' . $poll['vote'] . '\",\n\t\t\tip=\"' . $_SERVER['REMOTE_ADDR'] . '\", user_id=\n\t\t\t\t(SELECT id\n\t\t\t\tFROM users\n\t\t\t\tWHERE cookie_hash = \"' . $_SESSION['id'] . '\"),\n\t\t\tdate_created=now()'",
+        "$poll['vote']",
+        "$poll = $_REQUEST['poll']"
+    ],
+    [
+        "mysqli_query($GLOBALS['db'], $sql)",
+        "$sql = 'SELECT DISTINCT meetings.time AS time_raw, DATE_FORMAT(meetings.time, \"%l:%i %p\") AS time,\n\t\tmeetings.timedesc, description, location\n\t\tFROM meetings\n\t\tLEFT JOIN committees\n\t\t\tON meetings.committee_id=committees.id\n\t\tWHERE date=\"' . $date . '\"\n\t\tORDER BY timedesc DESC, time_raw ASC'",
+        "$date = $_GET['date']"
+    ],
+    [
+        "mysqli_query($GLOBALS['db'], $sql)",
+        "$sql = 'SELECT bills.id, bills.number, bills.session_id, bills.chamber, bills.catch_line,\n\t\tbills.chief_patron_id, bills.summary, bills.notes, representatives.name AS patron,\n\t\tdistricts.number AS patron_district, sessions.year, bills_status.status AS status_line,\n\t\tbills_status.translation AS status_line_translation,\n\t\tDATE_FORMAT(\"%m/%d/%Y\", bills_status.date) AS status_line_date,\n\t\trepresentatives.party AS patron_party, representatives.chamber AS patron_chamber,\n\t\trepresentatives.shortname AS patron_shortname, committees.name AS committee_name,\n\t\tcommittees.shortname AS committee_shortname\n\t\tFROM bills\n\t\tLEFT JOIN votes\n\t\t\tON bills.id=votes.bill_id\n\t\tLEFT JOIN sessions\n\t\t\tON sessions.id=bills.session_id\n\t\tLEFT JOIN representatives\n\t\t\tON representatives.id=bills.chief_patron_id\n\t\tLEFT JOIN districts\n\t\t\tON representatives.district_id=districts.id\n\t\tLEFT JOIN bills_status\n\t\t\tON bills_status.lis_vote_id=votes.lis_id\n\t\tLEFT JOIN committees\n\t\t\tON votes.committee_id=committees.id\n        WHERE bills.number=\"' . $bill . '\" AND sessions.year=' . $year",
+        "$year = $_GET['year']",
+        "$_GET['year']",
+        "$bill = $_GET['bill']"
+    ],
+    [
+        "mysqli_query($GLOBALS['db'], $sql)",
+        "$sql = 'SELECT DISTINCT bills_status.status, bills_status.translation,\n\t\tDATE_FORMAT(bills_status.date, \"%m/%d/%Y\") AS date, bills_status.date AS date_raw,\n\t\tbills_status.lis_vote_id, votes.total AS vote_count\n\t\tFROM bills_status\n\t\tLEFT JOIN votes\n\t\t\tON bills_status.lis_vote_id = votes.lis_id\n\t\tWHERE bills_status.bill_id = ' . $bill['id'] . '\n        AND (votes.session_id=bills_status.session_id OR votes.session_id IS NULL)\n\t\tORDER BY date_raw DESC, bills_status.id DESC'",
+        "$bill['id']",
+        "$bill = $_GET['bill']"
+    ],
+    [
+        "$con->query($sql)",
+        "$sql = \"select * from user where (email= \\\"\".$user.\"\\\" or username= \\\"\".$user.\"\\\") and password= \\\"\".$pass.\"\\\" and is_active=1\"",
+        "$user = $_POST['username']"
+    ],
+    [
+        "$con->query($sql)",
+        "doit",
+        "Executor::doit($sql)",
+        "$sql = \"select * from \".self::$tablename.\" where date(fecha) >= \\\"$start\\\" and date(fecha) <= \\\"$end\\\" and estado=2   order by Fecha_creacion desc\"",
+        "getFiltroFechasAnulado",
+        "GastoData::getFiltroFechasAnulado($_GET['start'],$_GET['end'])",
+        "$_GET['start']"
+    ],
+    [
+        "$con->query($sql)",
+        "$sql = \"insert into $table (viewer_id, $field,realip,created_at) value (\".Session::getUID().\",$servid,\\\"\".IpLogger::getRealIP().\"\\\",NOW())\"",
+        "IpLogger::getRealIP()",
+        "$_SERVER['HTTP_CLIENT_IP']"
+    ],
+    [
+        "$con->query($sql)",
+        "$sql = \"insert into $table ($field,realip,created_at) value ($servid,\\\"\".IpLogger::getRealIP().\"\\\",NOW())\"",
+        "IpLogger::getRealIP()",
+        "$_SERVER['HTTP_CLIENT_IP']"
+    ],
+    [
+        "$con->query($sql)",
+        "$sql = \"select * from $table where realip='\".IpLogger::getRealIP().\"' and $field='$servid' order by created_at desc limit 1\"",
+        "IpLogger::getRealIP()",
+        "$_SERVER['HTTP_CLIENT_IP']"
+    ],
+    [
+        "Eloquent::DB()->select($sql, (array) $parameters)",
+        "dbFetchRows",
+        "dbFetchRows($full_query, $param)",
+        "$full_query = $full_query . $query . \" LIMIT $start,$results\"",
+        "mres($_POST['package'])",
+        "$results = $_POST['results']"
+    ],
+    [
+        "Eloquent::DB()->selectOne($sql, (array) $parameters)",
+        "dbFetchCell",
+        "dbFetchCell($count_query, $param)",
+        "$count_query .= $query . ' ) sub'",
+        "mres($_POST['package'])"
+    ],
+    [
+        "mysqli_query($db,\"insert into `tg_files`(file_name,file_id,file_unique_id,data_json) values('{$file_name}','{$file_id}','{$file_unique_id}','{$data_json}')\")",
+        "saveVideo",
+        "BotMainFunction::saveVideo($chat_id,$file_name, $file_id,$file_unique_id,$data_video)",
+        "$file_unique_id= $output[\"message\"][\"video\"][\"file_unique_id\"]",
+        "$output[\"message\"][\"video\"]",
+        "$file_id =$output[\"message\"][\"video\"][\"file_id\"]",
+        "$output[\"message\"][\"video\"]",
+        "$file_name=$output[\"message\"][\"video\"][\"file_name\"]",
+        "$output[\"message\"][\"video\"]",
+        "$output = json_decode($file_get_contents, TRUE)",
+        "$file_get_contents = file_get_contents(\"php://input\")"
+    ],
+    [
+        "mysqli_query($db,\"SELECT `chat_id` FROM `users` WHERE u_group=\".$group_sended)",
+        "sendMessageWithWebAdmin",
+        "BotWebSync::sendMessageWithWebAdmin($_GET[\"group_sended\"],$_GET[\"send_text_to_group\"])"
+    ],
+    [
+        "mysqli_query($db,\"SELECT * FROM `users` WHERE chat_id=\".$chat_id)",
+        "$chat_id = $output['message']['chat']['id']",
+        "$output['message']['chat']",
+        "$output = json_decode($file_get_contents, TRUE)",
+        "$file_get_contents = file_get_contents(\"php://input\")"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"INSERT INTO `ExamDetails` (`ExamName`, `Q1`, `Q2`, `Q3`, `Q4`, `Q5`) VALUES ('$Aname','$q1','$q2','$q3','$q4','$q5')\"",
+        "$q5 = $_POST[ 'Q5' ]",
+        "$q4 = $_POST[ 'Q4' ]",
+        "$q3 = $_POST[ 'Q3' ]",
+        "$q2 = $_POST[ 'Q2' ]",
+        "$q1 = $_POST[ 'Q1' ]",
+        "$Aname = $_POST[ 'AssessmentName' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"insert facutlytable (FName, FaName, Addrs, Gender, JDate, City, Pass, PhNo) values ('$tempfname', '$tempfaname', '$tempaddrs','$tempgender', '$tempjdate', '$tempcity' , '$temppass','$tempphno')\"",
+        "$tempcity = $_POST[ 'city' ]",
+        "$tempjdate = $_POST[ 'jdate' ]",
+        "$tempgender = $_POST[ 'gender' ]",
+        "$tempaddrs = $_POST[ 'addrs' ]",
+        "$tempfaname = $_POST[ 'faname' ]",
+        "$tempfname = $_POST[ 'fname' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"Insert into studenttable (FName, LName, FaName, DOB, Addrs, Gender, Course, PhNo , Eid, Pass) values ('$tempfname', '$templname', '$tempfaname', '$tempdob', '$tempaddrs' , '$tempgender', '$tempcourse' , $tempphno, '$tempeid' , '$temppass')\"",
+        "$tempdob = $_POST[ 'DOB' ]",
+        "$tempfaname = $_POST[ 'faname' ]",
+        "$templname = $_POST[ 'lname' ]",
+        "$tempfname = $_POST[ 'fname' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"INSERT INTO `Video` (`V_Title`, `V_Url`, `V_Remarks`) VALUES ('$title','$v_url','$v_info')\"",
+        "$v_info = $_POST[ 'Videoinfo' ]",
+        "$v_url = $_POST[ 'VideoURL' ]",
+        "$title = $_POST[ 'videotitle' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"INSERT INTO `query`(`Query`, `Eid`) VALUES ('$tempsquery','$tempseid')\"",
+        "$tempseid = $eid",
+        "$eid=$_GET['eid']",
+        "$tempsquery = $_POST[ 'squeryx' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"DELETE FROM `exam` WHERE ExId = $deleteid\"",
+        "$deleteid = $_GET[ 'deleteid' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"DELETE FROM `facutlytable` WHERE FID = $deleteid\"",
+        "$deleteid = $_GET[ 'deleteid' ]"
+    ],
+    [
+        "mysqli_query($connect, $sql)",
+        "$sql=\"DELETE FROM `guest` WHERE GuEid = '$deleteid'\"",
+        "$deleteid=$_GET['deleteid']"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"select * from admin where Aid='\" . $x . \"' and Apass='\" . $y . \"'\"",
+        "$y = $_POST[ \"apass\" ]",
+        "$x = $_POST[ \"aid\" ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"select * from facutlytable where FID='\" . $x . \"' and Pass='\" . $y . \"'\"",
+        "$y = $_POST[ \"pass\" ]",
+        "$x = $_POST[ \"fid\" ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"select * from studenttable where Eid='\" . $x . \"' and Pass='\" . $y . \"'\"",
+        "$y = $_POST[ \"pass\" ]",
+        "$x = $_POST[ \"sid\" ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"SELECT * FROM examans WHERE ExamID=$make\"",
+        "$make = $_GET[ 'makeid' ]"
+    ],
+    [
+        "mysqli_query($connect, $sql)",
+        "$sql=\"INSERT INTO `result`(`Eno`, `Ex_ID`, `Marks`) VALUES ($eno, '$ExamID' ,'$mark')\"",
+        "$mark= $_POST['marks']"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"DELETE FROM `examdetails` WHERE ExamID = $deleteid\"",
+        "$deleteid = $_GET[ 'deleteid' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"SELECT * FROM examdetails WHERE ExamID=$make\"",
+        "$make = $_GET[ 'editassid' ]"
+    ],
+    [
+        "mysqli_query($connect, $sql)",
+        "$sql = \"UPDATE `examdetails` SET ExamName='$E_name' , Q1='$Q_1' , Q2='$Q_2' , Q3='$Q_3', Q4='$Q_4', Q5='$Q_5' WHERE ExamID=$make\"",
+        "$make = $_GET[ 'editassid' ]",
+        "$Q_5= $_POST['Q5']",
+        "$Q_4= $_POST['Q4']",
+        "$Q_3= $_POST['Q3']",
+        "$Q_2= $_POST['Q2']",
+        "$Q_1= $_POST['Q1']",
+        "$E_name= $_POST['ExamName']"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"DELETE FROM `video` WHERE V_id = $deleteid\"",
+        "$deleteid = $_GET[ 'deleteid' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"SELECT * FROM video WHERE V_id=$make\"",
+        "$make = $_GET[ 'editassid' ]"
+    ],
+    [
+        "mysqli_query($connect, $sql)",
+        "$sql = \"UPDATE `video` SET V_Title='$V_Title' , V_Url='$V_Url' , V_Remarks='$V_Remarks' WHERE V_id=$make\"",
+        "$make = $_GET[ 'editassid' ]",
+        "$V_Remarks= $_POST['V_Remarks']",
+        "$V_Url= $_POST['V_Url']",
+        "$V_Title= $_POST['V_Title']"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"select * from  facutlytable where FID='$varid'\"",
+        "$varid = $_REQUEST[ 'myfid' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"select * from  studenttable where Eid='$varid'\"",
+        "$varid = $_REQUEST[ 'myds' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql2 )",
+        "$sql2 = \"INSERT INTO `guest`(`Gname`, `GuEid`) VALUES ('$tempgname','$tempseid')\"",
+        "$tempseid = $_POST[ 'email' ]",
+        "$tempgname = $_POST[ 'gnamex' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"INSERT INTO `query`(`Query`, `Eid`) VALUES ('$tempsquery','$tempseid')\"",
+        "$tempseid = $_POST[ 'email' ]",
+        "$tempsquery = $_POST[ 'squeryx' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"DELETE FROM `query` WHERE Qid = '$deleteid'\"",
+        "$deleteid = $_GET[ 'deleteid' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"INSERT INTO `studenttable` (`FName`, `LName`, `FaName`, `DOB`, `Addrs`, `Gender`, `PhNo`, `Eid`, `Pass`,`Course`) VALUES ('$fname','$lname','$faname','$dob','$addrs','$gender','$phno','$email','$pass','$course')\"",
+        "$dob = $_POST[ 'dob' ]",
+        "$faname = $_POST[ 'faname' ]",
+        "$lname = $_POST[ 'lname' ]",
+        "$fname = $_POST[ 'fname' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"DELETE FROM `result` WHERE RsID = $deleteid\"",
+        "$deleteid = $_GET[ 'deleteid' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"DELETE FROM `studenttable` WHERE Eno = $deleteid\"",
+        "$deleteid = $_GET[ 'deleteid' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql2 )",
+        "$sql2 = \"select * from  examdetails where ExamID='$exid'\"",
+        "$exid = $_GET[ 'exid' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"INSERT INTO `examans`(ExamID, Senrl, Sname, Ans1, Ans2, Ans3, \tAns4, Ans5) VALUES ($Ex_id,'$sEno','$tempsname','$tempq1','$tempq2','$tempq3','$tempq4','$tempq5')\"",
+        "$tempq3 = $_POST[ 'Q3' ]",
+        "$tempq2 = $_POST[ 'Q2' ]",
+        "$tempq1 = $_POST[ 'Q1' ]",
+        "$Ex_id = $exid",
+        "$exid = $_GET[ 'exid' ]"
+    ],
+    [
+        "mysqli_query($connect,$sql)",
+        "$sql=\"select * from  facutlytable where FID=$new2\"",
+        "$new2=$_GET['myfid']"
+    ],
+    [
+        "mysqli_query($connect, $sql)",
+        "$sql=\"UPDATE `facutlytable` SET FName='$tempfname',FaName='$tempfaname',Addrs='$tempaddrs', Gender='$tempgender', City='$tempcity',Pass='$temppass', PhNo=$tempphno WHERE FID=$new2\"",
+        "$tempphno=$_POST['phno']",
+        "$temppass=$_POST['pass']",
+        "$tempcity=$_POST['city']",
+        "$tempgender=$_POST['gender']",
+        "$tempaddrs=$_POST['addrs']",
+        "$tempfaname=$_POST['faname']",
+        "$tempfname=$_POST['fname']"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"select * from  studenttable where Eno=$new3\"",
+        "$new3 = $_GET[ 'eno' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"UPDATE `studenttable` SET FName='$tempfname', LName='$templname', FaName='$tempfaname', Gender='$tempgender', Course='$tempcourse', Addrs='$tempaddrs', PhNo=$tempphno, Eid='$tempeid', Pass='$temppass'  WHERE Eno=$new3\"",
+        "$tempcourse = $_POST[ 'course' ]",
+        "$tempgender = $_POST[ 'gender' ]",
+        "$tempfaname = $_POST[ 'faname' ]",
+        "$templname = $_POST[ 'lname' ]",
+        "$tempfname = $_POST[ 'fname' ]"
+    ],
+    [
+        "mysqli_query($connect,$sql)",
+        "$sql=\"select * from  facutlytable where FID=$new2\"",
+        "$new2=$_GET['fid']"
+    ],
+    [
+        "mysqli_query($connect, $sql)",
+        "$sql=\"UPDATE `facutlytable` SET FName='$tempfname',FaName='$tempfaname',Addrs='$tempaddrs', Gender='$tempgender', City='$tempcity',Pass='$temppass', PhNo=$tempphno WHERE FID=$new2\"",
+        "$tempphno=$_POST['phno']",
+        "$temppass=$_POST['pass']",
+        "$tempcity=$_POST['city']",
+        "$tempgender=$_POST['gender']",
+        "$tempaddrs=$_POST['addrs']",
+        "$tempfaname=$_POST['faname']",
+        "$tempfname=$_POST['fname']"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"select * from  guest where GuEid='$new2'\"",
+        "$new2 = $_GET[ 'gid' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"UPDATE `guest` SET Gname='$tempgname' WHERE GuEid='$new2'\"",
+        "$new2 = $_GET[ 'gid' ]",
+        "$tempgname = $_POST[ 'gname' ]"
+    ],
+    [
+        "mysqli_query($connect,$sql)",
+        "$sql=\"select * from query where Qid=$editid\"",
+        "$editid=$_GET['gid']"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"UPDATE `query` SET Query='$tempquery', Ans='$tempans' WHERE Qid='$editid'\"",
+        "$editid=$_GET['gid']",
+        "$tempans = $_POST[ 'ansx' ]",
+        "$tempquery = $_POST[ 'queryx' ]"
+    ],
+    [
+        "mysqli_query($connect,$sql)",
+        "$sql=\"select * from result where RsID=$editid\"",
+        "$editid=$_GET['editid']"
+    ],
+    [
+        "mysqli_query($connect, $sql)",
+        "$sql=\"UPDATE `result` SET Marks='$tempmarks' WHERE RsID=$editid\"",
+        "$editid=$_GET['editid']",
+        "$tempmarks=$_POST['marks']"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"select * from  studenttable where Eno=$new3\"",
+        "$new3 = $_GET[ 'eno' ]"
+    ],
+    [
+        "mysqli_query( $connect, $sql )",
+        "$sql = \"UPDATE `studenttable` SET FName='$tempfname', LName='$templname', FaName='$tempfaname', Gender='$tempgender', Course='$tempcourse', Addrs='$tempaddrs', PhNo=$tempphno, Eid='$tempeid', Pass='$temppass'  WHERE Eno=$new3\"",
+        "$tempcourse = $_POST[ 'course' ]",
+        "$tempgender = $_POST[ 'gender' ]",
+        "$tempfaname = $_POST[ 'faname' ]",
+        "$templname = $_POST[ 'lname' ]",
+        "$tempfname = $_POST[ 'fname' ]"
+    ],
+    [
+        "mysqli_query($connect,$sql)",
+        "$sql=\"SELECT * FROM query WHERE Eid='$seid'\"",
+        "$seid=$_GET['eid']"
+    ],
+    [
+        "mysqli_query($connect,$sql)",
+        "$sql=\"SELECT * FROM result WHERE Eno='$seno'\"",
+        "$seno=$_GET['seno']"
+    ],
+    [
+        "mysqli_query($connect,$sql)",
+        "$sql=\"SELECT * FROM video WHERE V_id=$video_id\"",
+        "$video_id= $_GET['viewid']"
+    ],
+    [
+        "mysql_query($query)",
+        "$query = sprintf(\"DELETE FROM kon_comments WHERE CommentId = '%s'\", $commentid)",
+        "$commentid\t= ($_GET['commentid'])"
+    ],
+    [
+        "mysql_query(\"SELECT * FROM kon_publisher WHERE PublisherEmailId='$email'\")",
+        "$email=$_POST['email']"
+    ],
+    [
+        "mysql_query(\"INSERT INTO kon_publisher(PublisherName,PublisherEmailId,PublisherPassword) VALUES ('$name','$email','$password')\")",
+        "$password=$_POST['password']",
+        "$email=$_POST['email']",
+        "$lname=$_POST['lastname']",
+        "$fname=$_POST['firstname']"
+    ],
+    [
+        "mysql_query($query)",
+        "$query = \"SELECT * FROM kon_subscribers WHERE SubscriberId='\".$subid.\"'\"",
+        "$subid \t\t= ($_POST['subid'])"
+    ],
+    [
+        "$this->connection->prepare($sql)",
+        "$sql = \"SELECT email FROM user WHERE id='$userId'\"",
+        "$userId = $request->get('id')"
+    ],
+    [
+        "mysqli_query($GLOBALS[\"___mysqli_ston\"],  $query )",
+        "$query  = \"SELECT * FROM `users` WHERE user = '$user' AND password = '$pass';\"",
+        "$user = $_GET[ 'username' ]"
+    ],
+    [
+        "mysqli_query($GLOBALS[\"___mysqli_ston\"],  $query )",
+        "$query  = \"SELECT first_name, last_name FROM users WHERE user_id = '$id';\"",
+        "$id = $_REQUEST[ 'id' ]"
+    ],
+    [
+        "mysqli_query($GLOBALS[\"___mysqli_ston\"],  $getid )",
+        "$getid  = \"SELECT first_name, last_name FROM users WHERE user_id = '$id' LIMIT 1;\"",
+        "$id = $_COOKIE[ 'id' ]"
+    ],
+    [
+        "mysqli_query($GLOBALS[\"___mysqli_ston\"],  $getid )",
+        "$getid  = \"SELECT first_name, last_name FROM users WHERE user_id = '$id';\"",
+        "$id = $_GET[ 'id' ]"
+    ],
+    [
+        "oci_parse($conn, $sql)",
+        "$sql = \"begin \n             :varvalor:=modgeneri.genpkgutilidades.numero_a_letras($valor);\n            end;\"",
+        "numeros_letras",
+        "$this->numeros_letras($total_nota)",
+        "$total_nota = $_POST['TOTALNOTA']"
+    ],
+    [
+        "oci_parse($conn, $sqlxml3)",
+        "$sqlxml3 = (\"SELECT dbms_xmlgen.getxml(       \n            'SELECT\n            DETALLE\n            FROM\n            MODCLIUNI.CLITBLHISEVA\n            WHERE\n            PK_HISEVA_CODIGO=$datos')xml\n      from dual\")",
+        "$datos = $_POST['LISTA']"
+    ],
+    [
+        "mysqli_query($conn,$query7)",
+        "$query7 = \"SELECT * FROM Hostel WHERE Hostel_name = '$hostel_name'\"",
+        "$hostel_name = $_POST['hostel_name']"
+    ],
+    [
+        "mysqli_query($conn,$query)",
+        "$query = \"INSERT INTO Message (sender_id,receiver_id,hostel_id,subject_h,message,msg_date,msg_time) VALUES ('$roll','$hos_man_id','$hostel_id','$subject','$message','$today_date','$time')\"",
+        "$message = $_POST['message']",
+        "$subject = $_POST['subject']"
+    ],
+    [
+        "mysqli_query($conn,$query)",
+        "$query = \"INSERT INTO Message (sender_id,receiver_id,hostel_id,subject_h,message,msg_date,msg_time) VALUES ('$man_id','$roll','$hostel_id','$subject','$message','$today_date','$time')\"",
+        "$message = $_POST['message']",
+        "$subject = $_POST['subject']",
+        "$roll = $_POST['student_roll_no']"
+    ],
+    [
+        "mysqli_query($conn,$query6)",
+        "$query6 = \"DELETE FROM Application WHERE Student_id = '$roll'\"",
+        "$roll = $_POST['roll_no']"
+    ],
+    [
+        "mysqli_query($conn,$query3)",
+        "$query3 = \"SELECT * FROM Student WHERE Student_id = '$roll' and Hostel_id = '$hostel_id' and Room_id = '$room_id'\"",
+        "$roll = $_POST['roll_no']"
+    ],
+    [
+        "mysqli_query($conn,$query4)",
+        "$query4 = \"UPDATE Student SET Hostel_id = NULL, Room_id = NULL WHERE Student_id = '$roll'\"",
+        "$roll = $_POST['roll_no']"
+    ],
+    [
+        "mysqli_query($conn, $sql)",
+        "$sql = \"SELECT *FROM Hostel_Manager WHERE Username = '$username'\"",
+        "$username = $_POST['hm_uname']"
+    ],
+    [
+        "mysqli_query($conn, $sql2)",
+        "$sql2 = \"SELECT *FROM Hostel WHERE Hostel_name = '$hostel_name'\"",
+        "$hostel_name = $_POST['hostel_name']"
+    ],
+    [
+        "mysqli_query($conn, $sql3)",
+        "$sql3 = \"DELETE FROM Hostel_Manager WHERE Username = '$username'\"",
+        "$username = $_POST['hm_uname']"
+    ],
+    [
+        "mysqli_query($conn,$query_search)",
+        "$query_search = \"SELECT * FROM Student WHERE Student_id like '$search_box%'\"",
+        "$search_box = $_POST['search_box']"
+    ],
+    [
+        "mysqli_query($conn, $sql)",
+        "$sql = \"SELECT *FROM Hostel WHERE Hostel_name = '$hostel_name'\"",
+        "$hostel_name = $_POST['hostel_name']"
+    ],
+    [
+        "mysqli_query($conn, $sql)",
+        "$sql = \"INSERT INTO Hostel_Manager (Username, Fname, Lname, Mob_no, Hostel_id, Email, Pwd, Isadmin) VALUES ('$username', '$fname', '$lname', '$mobile', '$HostelID', '$email', '$hashedPwd', '$zz')\"",
+        "$email = $_POST['Email']",
+        "$mobile = $_POST['hm_mobile']",
+        "$lname = $_POST['hm_lname']",
+        "$fname = $_POST['hm_fname']",
+        "$username= $_POST['hm_uname']"
+    ],
+    [
+        "mysqli_query($conn,$query_search)",
+        "$query_search = \"SELECT * FROM Application WHERE Student_id like '$search_box%' and Hostel_id = '$hostel_id' and Application_status = '1'\"",
+        "$search_box = $_POST['search_box']"
+    ],
+    [
+        "mysqli_query($conn,$query_search)",
+        "$query_search = \"SELECT * FROM Student WHERE Student_id like '$search_box%' and Hostel_id = '$hostel_id'\"",
+        "$search_box = $_POST['search_box']"
+    ],
+    [
+        "mysqli_query($conn,$query_search)",
+        "$query_search = \"SELECT * FROM Room WHERE Room_No like '$search_box%' and Hostel_id = '$hostel_id' and Allocated = '0'\"",
+        "$search_box = $_POST['search_box']"
+    ],
+    [
+        "mysqli_query($conn, $sql)",
+        "$sql = \"SELECT *FROM Hostel_Manager WHERE Username = '$username'\"",
+        "$username = $_POST['username']"
+    ],
+    [
+        "mysqli_query($conn,$query2)",
+        "$query2 = \"SELECT * FROM Hostel WHERE Hostel_name = '$hostel'\"",
+        "$hostel = $_GET['id']"
+    ],
+    [
+        "mysqli_query($conn,$query3)",
+        "$query3 = \"INSERT INTO Application (Student_id,Hostel_id,Application_status,Message) VALUES ('$roll','$hostel_id',true,'$message')\"",
+        "$message = $_POST['Message']"
+    ],
+    [
+        "mysqli_query($conn, $sql)",
+        "$sql = \"SELECT *FROM Student WHERE Student_id = '$roll'\"",
+        "$roll = $_POST['student_roll_no']"
+    ],
+    [
+        "$this->connection->prepare($sql)",
+        "executeAsPrepared",
+        "$this->executeAsPrepared($sql, $data)",
+        "getListeParamAsPrepared",
+        "$this->getListeParamAsPrepared($sql, $param)",
+        "$sql .= \" limit $limit offset $offset\"",
+        "getListDetection",
+        "$dataClass->getListDetection($_REQUEST[\"individual_id\"], 'YYYY-MM-DD HH24:MI:SS.MS', \"detection_date asc\", 100, $offset)",
+        "$_REQUEST[\"individual_id\"]",
+        "$_REQUEST[\"individual_id\"]",
+        "$id = $_REQUEST[$keyName]"
+    ],
+    [
+        "$this->bdd->prepare($sql)",
+        "execute",
+        "$this->execute($sql . $where . $order, $args)",
+        "getTableContent",
+        "$export->getTableContent($table, $keys)",
+        "$keys = $_REQUEST[\"keys\"]",
+        "$_REQUEST[\"keys\"]",
+        "$_REQUEST[\"keys\"]"
+    ],
+    [
+        "$this->connection->query($sql)",
+        "execute",
+        "$this->execute($sql)",
+        "getListeParam",
+        "$this->getListeParam($sql)",
+        "$sql = \"select aclgroup_id from aclacl where aclaco_id = \" . $aclaco_id",
+        "getGroupsFromAco",
+        "$aclgroup->getGroupsFromAco($id)",
+        "$_REQUEST[\"aclappli_id\"]",
+        "$id = $_REQUEST[$keyName]"
+    ],
+    [
+        "mysqli_query($con,$sql)",
+        "$sql=!empty($_REQUEST['query'])?$_REQUEST['query']:\"show databases;\"",
+        "$_REQUEST['query']",
+        "$query=any(\"query\",$_REQUEST)?$_REQUEST['query']:\"show databases;\""
+    ],
+    [
+        "mysqli_query($link, $sql)",
+        "executeSql",
+        "executeSql($sql)",
+        "$sql=\"delete from stock where idStock=$idStock\"",
+        "delete",
+        "stock::delete($idStock)",
+        "$idStock=$_GET[\"idStock\"]"
+    ],
+    [
+        "mysqli_query($link, $sql)",
+        "executeSqlSelect",
+        "executeSqlSelect(\"SELECT * FROM sortie where idStock=$idStock and etat='\".self::$REELLE.\"' and corbeille='N' and YEAR(date)=$annee\")",
+        "chargerReellesPourStockAnneeSansLigne",
+        "sortie::chargerReellesPourStockAnneeSansLigne($stock, $anneeFiltre)",
+        "$anneeFiltre=$_GET['annee']",
+        "$_GET['annee']"
+    ],
+    [
+        "mysql_query($sql)",
+        "$sql=\"SELECT * FROM usermail where rec_id='$id' and mail_id='$coninb'\"",
+        "$coninb=$_GET['coninb']"
+    ],
+    [
+        "mysql_query($d)",
+        "$d=\"DELETE from usermail where mail_id='$v'\"",
+        "foreach($cheklist as $v)\n\t\t{\n\t\t\n\t\t$d=\"DELETE from usermail where mail_id='$v'\";\n\t\tmysql_query($d);\n\t\t}",
+        "$cheklist=$_REQUEST['ch']"
+    ],
+    [
+        "mysql_query($sql)",
+        "$sql=\"SELECT * FROM usermail where sen_id='$id' and mail_id='$consent'\"",
+        "$consent=$_GET['consent']"
+    ],
+    [
+        "mysql_query($d)",
+        "$d=\"DELETE from usermail where mail_id='$v'\"",
+        "foreach($cheklist as $v)\n\t\t{\n\t\t$d=\"DELETE from usermail where mail_id='$v'\";\n\t\tmysql_query($d);\n\t\t}",
+        "$cheklist=$_REQUEST['ch']",
+        "$cheklist=$_REQUEST['ch']"
+    ],
+    [
+        "mysql_query(\"SELECT * FROM userinfo where user_name='$to'\")",
+        "$to=$_POST['to']"
+    ],
+    [
+        "mysql_query(\"INSERT INTO usermail values('','$to','$id','$sub','$msg','',sysdate())\")",
+        "$msg=$_POST['msg']",
+        "$sub=$_POST['sub']",
+        "$to=$_POST['to']"
+    ],
+    [
+        "mysql_query(\"INSERT INTO usermail values('','$id','$id','$sub','$msg','',sysdate())\")",
+        "$msg=$_POST['msg']",
+        "$sub=$_POST['sub']"
+    ],
+    [
+        "mysql_query($query)",
+        "$query=\"INSERT INTO draft values('','$id','$sub','$file','$msg',sysdate())\"",
+        "$msg=$_POST['msg']",
+        "$sub=$_POST['sub']"
+    ],
+    [
+        "mysql_query(\"SELECT * FROM userinfo where user_name='$to'\")",
+        "$to=$_POST['to']"
+    ],
+    [
+        "mysql_query(\"INSERT INTO usermail values('','$to','$id','$sub','$msg','',sysdate())\")",
+        "$msg=$_POST['msg']",
+        "$sub=$_POST['sub']",
+        "$to=$_POST['to']"
+    ],
+    [
+        "mysql_query(\"INSERT INTO usermail values('','$id','$id','$sub','$msg','',sysdate())\")",
+        "$msg=$_POST['msg']",
+        "$sub=$_POST['sub']"
+    ],
+    [
+        "mysql_query($query)",
+        "$query=\"INSERT INTO draft values('','$id','$sub','$file','$msg',sysdate())\"",
+        "$msg=$_POST['msg']",
+        "$sub=$_POST['sub']"
+    ],
+    [
+        "mysql_query(\"SELECT * FROM usermail where rec_id='$id' and mail_id='$v'\")",
+        "foreach($_POST['ch'] as $v)\n{\n//echo $v;\n$sql=mysql_query(\"SELECT * FROM usermail where rec_id='$id' and mail_id='$v'\");\nwhile($dd=mysql_fetch_array($sql))\n\t{\n\t$rec=$dd['rec_id'];\n\t$sen=$dd['sen_id'];\n\t$sub=$dd['sub'];\n\t$msg=$dd['msg'];\n\t$att=$dd['attachement'];\n\t//store into trash table\n\tmysql_query(\"insert into trash values('','$rec','$sen','$sub','$msg',now())\");\n\t\n\t//delete form inbox\n\t\n\tmysql_query(\"delete FROM usermail where rec_id='$id' and mail_id='$v'\");\n\n\t}\n\t\n}",
+        "$_POST['ch']"
+    ],
+    [
+        "mysql_query(\"delete FROM usermail where rec_id='$id' and mail_id='$v'\")",
+        "foreach($_POST['ch'] as $v)\n{\n//echo $v;\n$sql=mysql_query(\"SELECT * FROM usermail where rec_id='$id' and mail_id='$v'\");\nwhile($dd=mysql_fetch_array($sql))\n\t{\n\t$rec=$dd['rec_id'];\n\t$sen=$dd['sen_id'];\n\t$sub=$dd['sub'];\n\t$msg=$dd['msg'];\n\t$att=$dd['attachement'];\n\t//store into trash table\n\tmysql_query(\"insert into trash values('','$rec','$sen','$sub','$msg',now())\");\n\t\n\t//delete form inbox\n\t\n\tmysql_query(\"delete FROM usermail where rec_id='$id' and mail_id='$v'\");\n\n\t}\n\t\n}",
+        "$_POST['ch']"
+    ],
+    [
+        "mysql_query(\"SELECT * FROM userinfo where user_name='{$_POST['id']}'\")",
+        "$_POST['id']",
+        "$_POST['id']"
+    ],
+    [
+        "mysql_query(\"SELECT * FROM userinfo where user_name='{$_POST['un']}'\")",
+        "$_POST['un']",
+        "$_POST['un']",
+        "$un=$_POST['un']"
+    ],
+    [
+        "mysql_query(\"INSERT INTO userinfo values('','{$_POST['un']}','{$_POST['pwd']}','{$_POST['mob']}','{$_POST['eid']}','{$_POST['gen']}','$hobbies','$dob',\n\t\t'$imgpath')\")",
+        "$hobbies=implode(\",\",$ch)",
+        "$ch=$_POST['ch']",
+        "$_POST['mob']",
+        "$_POST['un']",
+        "$un=$_POST['un']",
+        "$_POST['un']"
+    ],
+    [
+        "$bdd->prepare(\"SELECT * FROM Individu i, appartenir a\n\t\t\t\t\t\t\t\t  WHERE i.id_individu = a.id_individu\n\t\t\t\t\t\t\t\t  AND id_groupe = $idgrp\")",
+        "$idgrp = $_GET['idgrp']"
+    ],
+    [
+        "$bdd->prepare(\"SELECT * FROM Individu i, appartenir a\n\t\t\t\t\t\t\t\t\t\tWHERE i.id_individu = a.id_individu\n\t\t\t\t\t\t\t\t\t\tAND id_groupe = $idgrp\")",
+        "$idgrp = $_POST['idgrp']"
+    ],
+    [
+        "$bdd->prepare(\"SELECT i.id_statut, i.id_annuaire, i.nom, i.prenom, i.email, i.num, i.niveau \n\t\t\t\t\t\t\t\t\tFROM Individu i, appartenir a\n\t\t\t\t\t\t\t\t\tWHERE i.id_individu = a.id_individu\n\t\t\t\t\t\t\t\t\tAND id_groupe = $idgrp\")",
+        "$idgrp = $_POST['idgrp']"
+    ],
+    [
+        "$bdd->prepare(\"INSERT INTO appartenir\n        VALUES ($selectValue,$idgrp,$annee)\")",
+        "$annee = $_POST['annee']",
+        "$idgrp = $_POST['idgrp']",
+        "foreach($idindi as $selectValue){\n    $reqAjoutIndiGroupe = $bdd->prepare(\"INSERT INTO appartenir\n        VALUES ($selectValue,$idgrp,$annee)\");\n                            \n    $reqAjoutIndiGroupe->execute();\n}",
+        "$idindi = $_POST['idindi']"
+    ],
+    [
+        "$bdd->prepare(\"SELECT * FROM individu where num = '\".$num.\"'\")",
+        "$num = $_POST['num']"
+    ],
+    [
+        "$bdd->prepare(\"SELECT nom, prenom FROM individu where num = '\".$num.\"'\")",
+        "$num = $_POST['num']"
+    ],
+    [
+        "$bdd->prepare(\"INSERT INTO individu VALUES ('', '\".$type.\"', '\".$annuaire.\"', '\".$nom.\"', '\".$prenom.\"', '\".$email.\"', '\".$num.\"', '\".$niveau.\"') \")",
+        "$niveau = $_POST['niveau']",
+        "$num = $_POST['num']",
+        "$email = $_POST['email']",
+        "$prenom = $_POST['prenom']",
+        "$nom = $_POST['nom']",
+        "$annuaire = $_POST['annuaire']",
+        "$type = $_POST['type']"
+    ],
+    [
+        "$bdd->prepare(\"UPDATE groupe SET libelle = '\".$libellegrp.\"' WHERE id_groupe = '\".$modifgrp.\"'\")",
+        "$modifgrp = $_POST['modifgrp']",
+        "$libellegrp = $_POST['libellegrp']"
+    ],
+    [
+        "$bdd->prepare(\"SELECT * FROM individu\n\t\t\t\t\t\t\t\tWHERE id_individu = $modifind\")",
+        "$modifind = $_POST['modifind']"
+    ],
+    [
+        "$bdd->prepare(\"UPDATE individu SET id_statut = '\" . $type . \"', id_annuaire = '\" . $annuaire .\"', nom = '\" . $nom . \"', prenom = '\" . $prenom .\"', email = '\" . $email . \"', num = '\" . $num . \"', niveau = '\" . $niveau .\"' WHERE id_individu = '\" . $modifind . \"'\")",
+        "$niveau = $_POST['niveau']",
+        "$num = $_POST['num']",
+        "$email = $_POST['email']",
+        "$prenom = $_POST['prenom']",
+        "$nom = $_POST['nom']",
+        "$annuaire = $_POST['annuaire']",
+        "$type = $_POST['type']"
+    ],
+    [
+        "$bdd->prepare(\"SELECT * FROM groupe where libelle = '\".$nomGroupe.\"'\")",
+        "$nomGroupe = $_POST['libgrp']"
+    ],
+    [
+        "$bdd->prepare(\"DELETE FROM appartenir\n                            WHERE id_individu = $selectValue\n                            AND id_groupe = $idgrp\")",
+        "$idgrp = $_POST['idgrp']",
+        "foreach($idindi as $selectValue){\n    $reqSupprGroupe = $bdd->prepare(\"DELETE FROM appartenir\n                            WHERE id_individu = $selectValue\n                            AND id_groupe = $idgrp\");\n                            \n    $reqSupprGroupe->execute();\n}",
+        "$idindi = $_POST['idindi']"
+    ],
+    [
+        "$bdd->prepare(\"DELETE FROM appartenir\n\t\t\t\t\t\t\t\tWHERE id_individu = $idindi\")",
+        "$idindi = $_POST['idindi']"
+    ],
+    [
+        "$bdd->prepare(\"DELETE FROM individu\n\t\t\t\t\t\t\t\tWHERE id_individu = $idindi\")",
+        "$idindi = $_POST['idindi']"
+    ],
+    [
+        "$bdd->prepare(\"SELECT * FROM groupe where libelle = '\".$libgrp.\"'\")",
+        "$libgrp = $_POST['libgrp']"
+    ],
+    [
+        "$bdd->prepare(\"INSERT INTO groupe\n        VALUES ('','$libgrp')\")",
+        "$libgrp = $_POST['libgrp']"
+    ],
+    [
+        "$con->query($sql)",
+        "$sql = \"INSERT INTO pictures (image_url,name,description) VALUES ('$image_name', '$name', '$description')\"",
+        "$image_name = $_FILES['image']['name']"
+    ],
+    [
+        "$con->query($sql)",
+        "$sql = \"select * from user where (email= \\\"\".$user.\"\\\" or username= \\\"\".$user.\"\\\") and password= \\\"\".$pass.\"\\\" and is_active=1\"",
+        "$user = $_POST['username']"
+    ],
+    [
+        "$con->query($sql)",
+        "doit",
+        "Executor::doit($sql)",
+        "$sql = \"select * from \".self::$tablename.\" where date(fecha_creada) >= \\\"$start\\\" and date(fecha_creada) <= \\\"$end\\\" and tipo_operacion=2   order by id desc\"",
+        "getFiltroFechas",
+        "VentaData::getFiltroFechas($_GET['start'],$_GET['end'])",
+        "$_GET['end']",
+        "$_GET['end']",
+        "$_GET['start']",
+        "$_GET['start']"
+    ],
+    [
+        "$con->query($sql)",
+        "$sql = \"insert into $table (viewer_id, $field,realip,created_at) value (\".Session::getUID().\",$servid,\\\"\".IpLogger::getRealIP().\"\\\",NOW())\"",
+        "IpLogger::getRealIP()",
+        "$_SERVER['HTTP_CLIENT_IP']",
+        "$_SERVER['HTTP_CLIENT_IP']"
+    ],
+    [
+        "$con->query($sql)",
+        "$sql = \"insert into $table ($field,realip,created_at) value ($servid,\\\"\".IpLogger::getRealIP().\"\\\",NOW())\"",
+        "IpLogger::getRealIP()",
+        "$_SERVER['HTTP_CLIENT_IP']",
+        "$_SERVER['HTTP_CLIENT_IP']"
+    ],
+    [
+        "$con->query($sql)",
+        "$sql = \"select * from $table where realip='\".IpLogger::getRealIP().\"' and $field='$servid' order by created_at desc limit 1\"",
+        "IpLogger::getRealIP()",
+        "$_SERVER['HTTP_CLIENT_IP']",
+        "$_SERVER['HTTP_CLIENT_IP']"
+    ]
+]

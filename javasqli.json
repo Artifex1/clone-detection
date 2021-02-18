@@ -1,0 +1,3693 @@
+[
+    [
+        " preparedStmt.close();",
+        "\t    preparedStmt.setInt (1,idtrip);",
+        " \"Delete from Trip wher",
+        "city;",
+        "",
+        "Result);",
+        "(\"search\");",
+        "llerS"
+    ],
+    [
+        "stmt.executeQuery()",
+        "final PreparedStatement stmt = con.prepareStatement(query)",
+        "query",
+        "@NotNull",
+        "getUserRoleRows(con, query)",
+        "String query = SELECT + USERROLE_COLUMNS + FROM_GROUP_RELATION +\n        WHERE_ID_EQUALS_USERROLEID + \" and r.objectId is not null \" + AND_GROUP_ID_IN +\n        list2String(groupIds) + \")\";",
+        "getAllComponentObjectRolesForGroups",
+        "getAllComponentObjectRolesForGroups(con, groupIds)",
+        "getAllComponentObjectRoles",
+        "roleDAO.getAllComponentObjectRoles(con,\n          Collections.singletonList(groupId), -1)",
+        "getAllComponentObjectProfileIdsOfGroup",
+        "profileManager.getAllComponentObjectProfileIdsOfGroup(sGroupId)",
+        "getComponentObjectProfileIdsOfGroupType",
+        "getComponentObjectProfileIdsOfGroupType(context.getSourceId())",
+        "assignRightsFromSourceToTarget",
+        "assignRightsFromSourceToTarget(context)",
+        "assignRightsFromGroupToGroup",
+        "admin\n        .assignRightsFromGroupToGroup(operationMode, sourceGroupId, targetGroupId, nodeAssignRights,\n            authorId)",
+        "assignRightsFromGroupToGroup",
+        "adminCtrl\n                .assignRightsFromGroupToGroup(operationMode, sourceRightsId, getTargetGroup().getId(),\n                    nodeAssignRights, getUserId())",
+        "assignRights",
+        "jobDomainSC\n              .assignRights(choiceAssignRights, sourceRightsId, sourceRightsType, nodeAssignRights)",
+        "String sourceRightsId = request.getParameter(\"sourceRightsId\");",
+        "value = FileUploadUtil.getParameter(getFileItems(), name, null, getCharacterEncoding())",
+        "item.getString(encoding)"
+    ],
+    [
+        "prepStmt.executeQuery()",
+        "final PreparedStatement prepStmt = connection.prepareStatement(sSQLStatement)",
+        "final String sSQLStatement =\n        sqlStatement.buildGetPertinentAxisStatementByJoin(alCriterias, nAxisId,\n            sRootValue, instanceIds, todayFormatted);",
+        "sqlStatement.buildGetPertinentAxisStatementByJoin(alCriterias, nAxisId,\n            sRootValue, instanceIds, todayFormatted)",
+        "getSinglePertinentAxisByJoin",
+        "getSinglePertinentAxisByJoin(connection,\n            alCriterias, nAxisId, \"\", instanceIds, today)",
+        "getPertinentAxisByJoin",
+        "classifyEngine\n          .getPertinentAxisByJoin(searchContext.getCriterias(), axisIds, instanceIds)",
+        "getPertinentAxis",
+        "pdcClassifyManager.getPertinentAxis(searchContext, axisIds,\n        instanceIds)",
+        "getPertinentAxisByInstanceIds",
+        "getPertinentAxisByInstanceIds(searchContext, axisType, instanceIds)",
+        "getPertinentAxisByInstanceId",
+        "pdc.getPertinentAxisByInstanceId(searchContext, \"P\", componentId)",
+        "getPertinentAxis",
+        "getPertinentAxis(spaceId, componentId, userId, mainSC, writer)",
+        "displayPDC",
+        "displayPDC(displayPDC, spaceId, componentId, userId, mainSessionController, writer)",
+        "List<String> instanceIds = new ArrayList<>();",
+        "ArrayList<>",
+        "request.getParameter(\"ComponentId\")"
+    ],
+    [
+        "prepStmt.executeQuery()",
+        "final PreparedStatement prepStmt = connection.prepareStatement(sSQLStatement)",
+        "String sSQLStatement = sqlStatement.buildGetObjectValuePairsByJoinStatement(alCriterias, this.\n          getPhysicalAxisId(nLogicalAxisId), instanceIds, today, true);",
+        "getObjectValuePairsByJoin",
+        "classifyEngine.getObjectValuePairsByJoin(searchContext.getCriterias(), axisId,\n          instanceIds)",
+        "getObjectValuePairs",
+        "pdcClassifyManager\n        .getObjectValuePairs(searchContext, Integer.parseInt(axisId), instanceIds)",
+        "filterValues",
+        "filterValues(searchContext, axisId, instanceIds)",
+        "getPertinentDaughterValuesByInstanceIds",
+        "getPertinentDaughterValuesByInstanceIds(searchContext, axisId, valueId, instanceIds)",
+        "getPertinentDaughterValuesByInstanceId",
+        "pdc.getPertinentDaughterValuesByInstanceId(searchContext, axisId, valuePath,\n              componentId)",
+        "getPertinentValues",
+        "getPertinentValues(spaceId, componentId, userId, axisId, valuePath, displayContextualPDC,\n          mainSessionController, writer)",
+        "writePertinentValues",
+        "writePertinentValues(mainSessionController, userId, spaceId, componentId, axisId, valuePath,\n            displayContextualPDC, writer)",
+        "List<String> instanceIds = new ArrayList<>();",
+        "ArrayList<>",
+        "request.getParameter(\"ComponentId\")"
+    ],
+    [
+        "prepStmt.executeQuery()",
+        "final PreparedStatement prepStmt = connection.prepareStatement(sSQLStatement.toString())",
+        "sSQLStatement.toString()",
+        "getPertinentAxisByInstanceIds",
+        "classifyEngine.getPertinentAxisByInstanceIds(instanceIds)",
+        "getAxisHeaderUsedByInstanceIds",
+        "pdcUtilizationService.getAxisHeaderUsedByInstanceIds(instanceIds)",
+        "getPertinentAxisByInstanceIds",
+        "getPertinentAxisByInstanceIds(searchContext, axisType, instanceIds)",
+        "getPertinentAxisByInstanceId",
+        "pdc.getPertinentAxisByInstanceId(searchContext, \"P\", componentId)",
+        "getPertinentAxis",
+        "getPertinentAxis(spaceId, componentId, userId, mainSC, writer)",
+        "displayPDC",
+        "displayPDC(displayPDC, spaceId, componentId, userId, mainSessionController, writer)",
+        "String componentId = request.getParameter(\"ComponentId\");"
+    ],
+    [
+        "stmt.execute()",
+        "PreparedStatement stmt = connexionWrapper.getConnexion().prepareStatement(requete.getQuery().toString())",
+        "requete.getQuery().toString()",
+        "executeRequest",
+        "executeRequest(connexion, requete, EntityProvider.getArrayOfArrayProvider(), modes)",
+        "executeRequest",
+        "UtilitaireDao.get(\"arc\").executeRequest(connexion, new PreparedStatementBuilder(requete))",
+        "recupJeuDeRegle",
+        "JeuDeRegleDao.recupJeuDeRegle(connexion, anExecutionEnvironment + \".jeuderegle\")",
+        "applyExpressions",
+        "applyExpressions(connexion, anExecutionEnvironment)",
+        "copyTablesToExecutionThrow",
+        "copyTablesToExecutionThrow(connexion, anParametersEnvironment, anExecutionEnvironment)",
+        "copyTablesToExecution",
+        "copyTablesToExecution(connexion, envParameters, envExecution)",
+        "synchroniserSchemaExecution",
+        "ApiInitialisationService.synchroniserSchemaExecution(null, ApiService.IHM_SCHEMA, env)",
+        "env"
+    ],
+    [
+        "ps.executeQuery()",
+        "PreparedStatement ps = conn.prepareStatement(filterQuery)",
+        "String filterQuery = this.queryGeneretor(map);",
+        "sql = SQL_SELECT_NAME + feedids + SQL_FEED_ID + SQL_SELECT_COUNT + feedids + SQL_TYPE_PUB\n                + SQL_SELECT_SUM\n                + feedids + SQL_PUBLISH_LENGTH + SQL_SUBSCRIBER_URL\n                + SQL_SUB_ID + SQL_DELIVERY_TIME + SQL_AVERAGE_DELAY + SQL_JOIN_RECORDS + feedids + \")\" + subid + SQL_STATUS_204\n                +\" and e.event_time between \" + startInMillis + \" and \" + endInMillis + SQL_GROUP_SUB_ID",
+        "getRecordsForSQL",
+        "this.getRecordsForSQL(map, outputType, resp.getOutputStream(), resp)",
+        "req.getParameter(OUTPUT_TYPE)"
+    ],
+    [
+        "manager.createNativeQuery(sql.toString(), ChangeManagementDetail.class)",
+        "searchScheduleDetails",
+        "cmDetailsDao.searchScheduleDetails(where.toString(), maxRows)",
+        "MultivaluedMap<String, String> qp = uri.getQueryParameters();"
+    ],
+    [
+        "stmt.executeQuery(sql)",
+        "String sql = \"SELECT email FROM Users WHERE Username = '\" + username + \"';\";",
+        "selectUserEmail",
+        "SimpleQueries.selectUserEmail(stmt, username)",
+        "getUserEmail",
+        "UserDao.getUserEmail(username)",
+        "login",
+        "login",
+        "getParameter"
+    ],
+    [
+        "stmt.executeQuery(sql)",
+        "String sql = \"SELECT Username FROM Users WHERE Username = '\" + username + \"';\";",
+        "controlUniqueUsername",
+        "SimpleQueries.controlUniqueUsername(stmt, username)",
+        "usernameChecker",
+        "UserDao.usernameChecker(newUsername)",
+        "changeUsername",
+        "changeUsername"
+    ],
+    [
+        "stmt.executeQuery(sql)",
+        "String sql = \"SELECT Username FROM Users WHERE Username = '\" + username + \"';\";",
+        "controlUniqueUsername",
+        "SimpleQueries.controlUniqueUsername(stmt, username)",
+        "usernameChecker",
+        "UserDao.usernameChecker(newUsername)",
+        "changeUsername",
+        "changeUsername"
+    ],
+    [
+        "jdbcTemplate.query(query.toString(), new JobDTOMapper())",
+        "getJobs",
+        "jobRepository.getJobs(skills, locations, maxDistanceInt, jobTypes, expLevels, transportTypes, datePosted, hasGreenCommute)",
+        "getJobList",
+        "jobService.getJobList(skills, locations, maxDistance, jobTypes, expLevels, transportTypes, datePosted, hasGreenCommute)",
+        "expLevels",
+        "jobTypes"
+    ],
+    [
+        "jdbcTemplate.query(query.toString(), new JobDTOMapper())",
+        "getSavedJobs",
+        "jobRepository.getSavedJobs(userId, jobTypes, expLevels, transportTypes, datePosted, hasGreenCommute)",
+        "getSavedJobs",
+        "jobService.getSavedJobs(userId, jobTypes, expLevels, transportTypes, datePosted, hasGreenCommute)",
+        "expLevels",
+        "jobTypes"
+    ],
+    [
+        "session.createSQLQuery(sql.toString())",
+        "widgetCatalogService.getUserWidgetCatalog(loginName)"
+    ],
+    [
+        "stmt.executeQuery(sql)",
+        "executeQuery",
+        "executeQuery(con, sql, maxRowLimit)",
+        "executeQuery",
+        "DbUtils.executeQuery(sql, Globals.getDefaultPageSize() + 1)",
+        "getDataSet",
+        "ConnectionUtils.getDataSet(sql, rdef.getDBInfo(), true)",
+        "sql = Utils.replaceInString(sql, \"[USERID]\", userId)",
+        "sql = Utils.replaceInString(sql, \"[LOGGED_USERID]\", userId)",
+        "String sql = queryJSON.getQuery();",
+        "queryJSON"
+    ],
+    [
+        "stmt.executeQuery(sql)",
+        "executeQuery",
+        "executeQuery(con, sql, maxRowLimit,dbKey)",
+        "executeQuery",
+        "RemDbUtils.executeQuery(sql, Globals.getDefaultPageSize() + 1,remoteDbPrefix)",
+        "getDataSet",
+        "ConnectionUtils.getDataSet(sql, rdef.getDBInfo(), true)",
+        "sql = Utils.replaceInString(sql, \"[USERID]\", userId)",
+        "sql = Utils.replaceInString(sql, \"[LOGGED_USERID]\", userId)",
+        "String sql = queryJSON.getQuery();",
+        "queryJSON"
+    ],
+    [
+        "preparedState.executeQuery()",
+        "PreparedStatement preparedState = conn.prepareStatement(sql);",
+        "execute",
+        "execute(correctedSql, sqlRequest)",
+        "correctedSql.equals(sqlRequest.getSql())",
+        "String correctedSql = QueryUtil.massageSql(sqlRequest);",
+        "queryWithSqlMassage",
+        "queryWithSqlMassage(sqlRequest)",
+        "query",
+        "queryService.query(sqlRequest)",
+        "doQueryWithCache",
+        "doQueryWithCache(sqlRequest)",
+        "sqlRequest"
+    ],
+    [
+        "stat.executeQuery(sql)",
+        "execute",
+        "execute(correctedSql, sqlRequest)",
+        "correctedSql.equals(sqlRequest.getSql())",
+        "String correctedSql = QueryUtil.massageSql(sqlRequest);",
+        "queryWithSqlMassage",
+        "queryWithSqlMassage(sqlRequest)",
+        "query",
+        "queryService.query(sqlRequest)",
+        "doQueryWithCache",
+        "doQueryWithCache(sqlRequest)",
+        "sqlRequest"
+    ],
+    [
+        "preparedStatement.executeQuery()",
+        "PreparedStatement preparedStatement = preparedContext.preparedStatement;",
+        "executePrepareRequest",
+        "executePrepareRequest(correctedSql, prepareSqlRequest, preparedContext)",
+        "sqlRequest.getSql()",
+        "queryWithSqlMassage",
+        "queryWithSqlMassage(sqlRequest)",
+        "query",
+        "query(sqlRequest, queryContext.getQueryId())",
+        "queryAndUpdateCache",
+        "queryAndUpdateCache(sqlRequest, isQueryCacheEnabled)",
+        "sqlRequest.getSql()",
+        "sql = result.getSecond()",
+        "doQueryWithCache",
+        "doQueryWithCache(sqlRequest, false)",
+        "doQueryWithCache",
+        "queryService.doQueryWithCache(sqlRequest)",
+        "sqlRequest",
+        "@RequestMapping(value = \"/query/format/{format}\", method = RequestMethod.GET, produces = { \"application/json\" })"
+    ],
+    [
+        ".println(query);",
+        "ublic int modifyUserPassword(String userName, String password, String email) {",
+        "",
+        "getRequestDispatcher(\"successSignUp.jsp\").forward(req",
+        "\tSystem.out.println(e);",
+        "",
+        "} catch (Exception e) {"
+    ],
+    [
+        "",
+        "\t\t\t\t+ \"\\\"\" + \",\" + \" Email=\" + \"\\\"\" + email + \"\\\"\" + \",\" + \" Username=\" + \"\\\"\" + userName + \"\\\"\"\n//\t\t\t\t+ \" WHERE idUser=\" + idUser;\n\t\tint result = 0;\n\t\ttry (Connection con = DBConnection.createConnection();",
+        "uery = \"UPDATE user SE",
+        "setAttribute(\"successMsg\", \"Modifica dei dati completata con successo!\");",
+        "String userName = request.getParameter(\"username\").trim(",
+        "String email = request.getParameter(\"email\").trim(",
+        " request.getParameter(\"email"
+    ],
+    [
+        "tSurname(resultSet.getString(\"",
+        "\ttry (ResultSet resultSet = preparedStatement.executeQuery()) {\n\t\t\t\twhile (resultSet.next()) {\n\t\t\t\t\tuser = new User();\n\t\t\t\t\tuser.setBirthdayDate(result",
+        "Statement prepare",
+        ".getRequestDispatcher(\"/customerInformation.jsp\").forward(request, response);",
+        "} ",
+        "\t}",
+        ""
+    ],
+    [
+        "",
+        "\t} catch (Exception e) {\n\t\t\t\tlog.log(Level.FINE, e.toString());\n\t\t\t}\n",
+        " new User();",
+        "",
+        ""
+    ],
+    [
+        "Restrictions.sqlRestriction(\"{alias}.nodeid in (select nodeid from snmpinterface where snmpcollect != 'D' and \" + snmpParameterName + \" = ?)\", snmpParmValue, new StringType())",
+        "addCriteriaForSnmpParm",
+        "addCriteriaForSnmpParm(criteria, command.getSnmpParm(), command.getSnmpParmValue(), command.getSnmpParmMatchType())",
+        "addCriteriaForCommand",
+        "addCriteriaForCommand(criteria, command)",
+        "createNodeList",
+        "createNodeList(command, true)",
+        "createNodeList",
+        "m_nodeListService.createNodeList(command)",
+        "command"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + param + \"'\";",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = thing.doSomething(param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "String param = request.getParameter(\"BenchmarkTest00433\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = valuesList.get(0)",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = thing.doSomething(param);",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = thing.doSomething(param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest00679\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = thing.doSomething(param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00768\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01389\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01554\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02178\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02181\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02281\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + param + \"'\";",
+        "String param = request.getParameter(\"BenchmarkTest00025\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Integer.class)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = thing.doSomething(param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00198\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Integer.class)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00199\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00336\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "String param = scr.getTheParameter(\"BenchmarkTest00678\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = param;",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00764\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = thing.doSomething(param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00765\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00766\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00767\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Integer.class)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = (String)map12983.get(\"keyB-12983\")",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Integer.class)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01087\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01088\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01215\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01308\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Integer.class)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01387\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Integer.class)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01388\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01390\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01556\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01625\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Integer.class)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01965\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02179\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Integer.class)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02275\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Integer.class)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02276\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02279\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02280\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql, Long.class)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "stmt.executeQuery(query)",
+        "String query = \"select * from cities where cityname='\"+name+\"'\";",
+        "findCityByName",
+        "cityDao.findCityByName(name)",
+        "getCityByName",
+        "adminService.getCityByName(route.getFromCity()\n\t\t\t\t\t.getCityName())",
+        "route.getFromCity()",
+        "route"
+    ],
+    [
+        "stmt.executeQuery(searchQuery)",
+        "String searchQuery = \"select route0_.routeid,fromcity.cityname,tocity.cityname,fromcity.cityid,tocity.cityid from routes \"\n\t\t\t\t+ \"route0_,cities fromcity,cities tocity where route0_.fromcityid=fromcity.cityid and route0_.tocityid=tocity.cityid and \"\n\t\t\t\t+ \"fromcity.cityname='\"\n\t\t\t\t+ fromCity\n\t\t\t\t+ \"' and tocity.cityname='\"\n\t\t\t\t+ toCity + \"'\";",
+        "findByCityNames",
+        "routeDao.findByCityNames(searchData.getToCity(),searchData.getFromCity())",
+        "searchData.getToCity()",
+        "searchData"
+    ],
+    [
+        "stmt.executeUpdate(query)",
+        "String query = \"UPDATE users SET `username`='\"+user.getEmail()+\"', `fullname`='\"+user.getFullName()+\"', `gender`='\"+user.getGender()+\"', `password`='\"+user.getPassword()+\"' WHERE `user_id`=\"+user.getUserId()+\";\";",
+        "update",
+        "this.userDao.update(user)",
+        "updateUser",
+        "this.profileService.updateUser(userDB)",
+        "String name = auth.getName();"
+    ],
+    [
+        "stmt.executeUpdate(query1)",
+        "query1 = \"UPDATE `happytrip_itr1`.`usercontactinformation` SET `address`='\"+user.getUserContact().getAddress()+\"', `mobileno`='\"+user.getUserContact().getMobileNo()+\"', `pincode`='\"+user.getUserContact().getPinCode()+\"', `cityid`=\"+user.getUserContact().getCity().getCityId()+\" WHERE `contactid`='\"+user.getUserContact().getUserId()+\"'\"",
+        "update",
+        "this.userDao.update(user)",
+        "updateUser",
+        "this.profileService.updateUser(userDB)",
+        "saveProfileData",
+        "saveProfileData(userProfile)",
+        "userProfile"
+    ],
+    [
+        "jdbcTemplate.query(\n                    sql,\n                    (rs, rowNum) -> Article.builder()\n                            .aid(rs.getLong(\"aid\"))\n                            .uid(rs.getLong(\"uid\"))\n                            .title(rs.getString(\"title\"))\n                            .tags(rs.getString(\"tags\"))\n                            .imgUrl(rs.getString(\"img_url\"))\n                            .content(rs.getString(\"content\"))\n                            .createTime(rs.getTime(\"create_time\"))\n                            .hot(rs.getBoolean(\"hot\"))\n                            .build())",
+        "String sql = \"select * from article where title like '%\" + key + \"%';\";",
+        "listByKey",
+        "articleService.listByKey(key)",
+        "key"
+    ],
+    [
+        "conn.createStatement().executeQuery(sql)",
+        "sql = \"SELECT *\"\n\t\t\t      + \"FROM product \"\n\t\t\t      + \"WHERE LOWER( name ) LIKE '%\"\n\t\t\t      + nameQuery\n\t\t\t      + \"%'\"",
+        "findByName",
+        "productRepository.findByName(name)",
+        "findByName",
+        "productService.findByName(name)",
+        "name"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = new String( param.getBytes() )",
+        "param.getBytes()",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = new String( param.getBytes() )",
+        "param.getBytes()",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00194\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = new String( param.getBytes() )",
+        "param.getBytes()",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeQuery( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = new String( param.getBytes() )",
+        "param.getBytes()",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = new String( param.getBytes() )",
+        "param.getBytes()",
+        "String param = scr.getTheParameter(\"BenchmarkTest00677\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql)",
+        "String sql = \"SELECT  * from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeUpdate( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01221\")"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01302\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01306\");"
+    ],
+    [
+        "statement.executeUpdate( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeUpdate( sql, new int[] {1,2} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01630\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01962\")"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest02096\")"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest02099\")"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02170\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02171\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02182\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02277\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02286\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02453\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02532\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02535\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + param + \"}\";",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00008\")"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ param + \"')\";",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00018\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ param +\"'\";",
+        "String param = request.getParameter(\"BenchmarkTest00024\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + param + \"'\";",
+        "String param = request.getParameter(\"BenchmarkTest00025\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql)",
+        "String sql = \"SELECT  * from USERS where USERNAME='foo' and PASSWORD='\"+ param + \"'\";",
+        "String param = request.getParameter(\"BenchmarkTest00026\");"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ param + \"')\";",
+        "String param = request.getParameter(\"BenchmarkTest00027\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + param + \"'\";",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00032\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql)",
+        "String sql = \"SELECT  * from USERS where USERNAME='foo' and PASSWORD='\"+ param + \"'\";",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00033\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ param +\"'\";",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00034\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ param +\"'\";",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + param + \"'\";",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + param + \"'\";",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeUpdate( sql, new int[] {1,2} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ param + \"')\";",
+        "String param = scr.getTheParameter(\"BenchmarkTest00043\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = (String)map72344.get(\"keyB-72344\")",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = thing.doSomething(param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql,new Object[]{}, String.class)",
+        "String sql = \"SELECT TOP 1 USERNAME from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.execute( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = thing.doSomething(param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "bar = (String)map11928.get(\"keyB-11928\")",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00192\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00193\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00195\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00196\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForInt(sql)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = thing.doSomething(param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00198\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForInt(sql)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00199\")"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00203\")"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = thing.doSomething(param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00204\")"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00328\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new int[] { 1, 2 } );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00335\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql,new Object[]{}, String.class)",
+        "String sql = \"SELECT TOP 1 USERNAME from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00337\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql)",
+        "String sql = \"SELECT  * from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00339\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00341\")"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00342\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = valuesList.get(0)",
+        "String param = request.getParameter(\"BenchmarkTest00428\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "String param = request.getParameter(\"BenchmarkTest00429\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "String param = request.getParameter(\"BenchmarkTest00431\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "String param = request.getParameter(\"BenchmarkTest00433\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = thing.doSomething(param);",
+        "String param = request.getParameter(\"BenchmarkTest00434\");"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = (String)map86691.get(\"keyB-86691\")",
+        "String param = request.getParameter(\"BenchmarkTest00435\");"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "String param = request.getParameter(\"BenchmarkTest00438\");"
+    ],
+    [
+        "statement.executeQuery( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = param;",
+        "String param = request.getParameter(\"BenchmarkTest00439\");"
+    ],
+    [
+        "statement.executeUpdate( sql, new int[] {1,2} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = thing.doSomething(param);",
+        "String param = request.getParameter(\"BenchmarkTest00441\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "bar = param",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00510\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = param;",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00512\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = valuesList.get(0)",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00515\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00516\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeUpdate( sql, new int[] {1,2} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = thing.doSomething(param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00518\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "bar = param",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, \n\t\t\t    java.sql.Statement.RETURN_GENERATED_KEYS );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = thing.doSomething(param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "bar = param",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = (String)map29056.get(\"keyB-29056\")",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = valuesList.get(0)",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = thing.doSomething(param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "bar = param",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = thing.doSomething(param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "bar = param",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "String param = scr.getTheParameter(\"BenchmarkTest00673\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "String param = scr.getTheParameter(\"BenchmarkTest00678\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = thing.doSomething(param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest00679\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.executeQuery( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = param;",
+        "String param = scr.getTheParameter(\"BenchmarkTest00681\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "bar = (String)map18915.get(\"keyB-18915\")",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00760\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "bar = param",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00761\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00762\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = param;",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00764\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = thing.doSomething(param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00765\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00767\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = thing.doSomething(param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00768\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = (String)map29572.get(\"keyB-29572\")",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00769\");"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = valuesList.get(0)",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00770\");"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = (String)map49960.get(\"keyB-49960\")",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00771\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForInt(sql)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = (String)map12983.get(\"keyB-12983\")",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql)",
+        "String sql = \"SELECT  * from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\";",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = param;",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = param;",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeQuery( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new int[] { 1, 2 } );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql)",
+        "String sql = \"SELECT  * from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01083\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01084\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForInt(sql)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01087\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01088\")"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01090\")"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01091\")"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01093\")"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01094\")"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01097\")"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01208\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, \n\t\t\t    java.sql.Statement.RETURN_GENERATED_KEYS );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01209\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01210\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01211\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01214\")"
+    ],
+    [
+        "statement.executeUpdate( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01222\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01304\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01308\");"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01311\");"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01312\");"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01313\");"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01314\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01379\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, \n\t\t\t    java.sql.Statement.RETURN_GENERATED_KEYS );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01381\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, \n\t\t\t    java.sql.Statement.RETURN_GENERATED_KEYS );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01382\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01383\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new int[] { 1, 2 } );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01384\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForInt(sql)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01388\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01390\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeQuery( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01391\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeUpdate( sql, new int[] {1,2} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01394\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01395\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01396\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeUpdate( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01552\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01554\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.execute( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01557\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.execute( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01558\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01559\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.executeUpdate( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01560\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01620\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01621\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01623\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01624\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01625\");"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01626\");"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01627\");"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01631\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForInt(sql)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql,new Object[]{}, String.class)",
+        "String sql = \"SELECT TOP 1 USERNAME from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql)",
+        "String sql = \"SELECT  * from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql)",
+        "String sql = \"SELECT  * from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeUpdate( sql, new int[] {1,2} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01963\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01964\")"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01970\")"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01971\")"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01972\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, \n\t\t\t    java.sql.Statement.RETURN_GENERATED_KEYS );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest02087\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest02088\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest02090\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest02091\")"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest02092\")"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest02094\")"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02169\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02177\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02178\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02179\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02181\");"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02186\");"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02187\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02264\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02269\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02270\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02272\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02273\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForInt(sql)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02275\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForMap(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02281\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02284\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02287\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02288\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new int[] { 1, 2 } );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql)",
+        "String sql = \"SELECT  * from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeUpdate( sql, new int[] {1,2} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02449\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02451\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02454\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02455\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02528\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02530\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, \n\t\t\t    java.sql.Statement.RETURN_GENERATED_KEYS );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02531\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02533\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02534\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02537\");"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02542\");"
+    ],
+    [
+        "statement.execute( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02543\");"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02545\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql)",
+        "String sql = \"SELECT  * from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForRowSet(sql)",
+        "String sql = \"SELECT  * from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeQuery( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeUpdate( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeUpdate( sql, new int[] {1,2} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "bar = param",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest00191\")"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00329\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00333\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00336\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql,new Object[]{}, String.class)",
+        "String sql = \"SELECT TOP 1 USERNAME from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00338\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = param",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00340\")"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00343\")"
+    ],
+    [
+        "statement.executeQuery( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest00344\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "String param = request.getParameter(\"BenchmarkTest00430\");"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "String param = request.getParameter(\"BenchmarkTest00436\");"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "String param = request.getParameter(\"BenchmarkTest00437\");"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00514\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00517\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "bar = param",
+        "String param = scr.getTheParameter(\"BenchmarkTest00672\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new int[] { 1, 2 } );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "String param = scr.getTheParameter(\"BenchmarkTest00675\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "String param = scr.getTheParameter(\"BenchmarkTest00676\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "bar = param",
+        "bar = param",
+        "String param = scr.getTheParameter(\"BenchmarkTest00682\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new int[] { 1, 2 } );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00763\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00766\");"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00772\");"
+    ],
+    [
+        "statement.executeUpdate( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "bar = param",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00774\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY, \n\t\t\t\tjava.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "bar = param",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01086\")"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01092\")"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01095\")"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01096\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01213\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01215\")"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01218\")"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest01220\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new int[] { 1, 2 } );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01305\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01307\");"
+    ],
+    [
+        "statement.executeUpdate( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01315\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01380\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01385\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForInt(sql)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01387\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01389\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.executeQuery( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01392\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForList(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01556\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01628\");"
+    ],
+    [
+        "statement.executeUpdate( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01629\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeQuery( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, \n\t\t\t    java.sql.Statement.RETURN_GENERATED_KEYS );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(theCookie.getValue(), \"UTF-8\")",
+        "theCookie.getValue()",
+        "request.getCookies()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01965\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql,new Object[]{}, String.class)",
+        "String sql = \"SELECT TOP 1 USERNAME from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01966\")"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql,new Object[]{}, String.class)",
+        "String sql = \"SELECT TOP 1 USERNAME from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01967\")"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01969\")"
+    ],
+    [
+        "statement.executeUpdate( sql )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"BenchmarkTest01973\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest02089\")"
+    ],
+    [
+        "statement.execute( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest02093\")"
+    ],
+    [
+        "statement.executeQuery( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"BenchmarkTest02098\")"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02172\");"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql,\n\t\t\t\tjava.sql.ResultSet.TYPE_FORWARD_ONLY, java.sql.ResultSet.CONCUR_READ_ONLY );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02173\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02174\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02176\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql, java.sql.ResultSet.TYPE_FORWARD_ONLY, \n\t\t\t\t\t\t\tjava.sql.ResultSet.CONCUR_READ_ONLY, java.sql.ResultSet.CLOSE_CURSORS_AT_COMMIT );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02266\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new int[] { 1, 2 } );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02271\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.query(sql,  new org.springframework.jdbc.core.RowMapper<String>() {\n\t            public String mapRow(java.sql.ResultSet rs, int rowNum) throws java.sql.SQLException {\n\t                try {\n\t                \treturn rs.getString(\"USERNAME\");\n\t                } catch (java.sql.SQLException e) {\n\t                \tif (org.owasp.benchmark.helpers.DatabaseHelper.hideSQLErrors) {\n\t        \t\t\t\treturn \"Error processing query.\";\n\t        \t\t\t}\n\t\t\t\t\t\telse throw e;\n\t\t\t\t\t}\n\t            }\n\t        })",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02274\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForInt(sql)",
+        "String sql = \"SELECT  TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\"+ bar + \"'\" ;",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02276\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02279\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForLong(sql)",
+        "String sql = \"SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02280\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02282\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute( sql, new String[] { \"username\", \"password\" } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02285\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, \n\t\t\t    java.sql.Statement.RETURN_GENERATED_KEYS );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.queryForObject(sql,new Object[]{}, String.class)",
+        "String sql = \"SELECT TOP 1 USERNAME from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.executeUpdate( sql, java.sql.Statement.RETURN_GENERATED_KEYS )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, \n\t\t\t    java.sql.Statement.RETURN_GENERATED_KEYS );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02450\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "statement.executeUpdate( sql, new String[] {\"USERNAME\",\"PASSWORD\"} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02456\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02536\");"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02540\");"
+    ],
+    [
+        "statement.executeBatch()",
+        "statement.addBatch( sql )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02541\");"
+    ],
+    [
+        "statement.execute( sql, new int[] { 1, 2 } )",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02544\");"
+    ],
+    [
+        "statement.executeUpdate( sql, new int[] {1,2} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02546\");"
+    ],
+    [
+        "statement.executeQuery()",
+        "java.sql.CallableStatement statement = connection.prepareCall( sql );",
+        "String sql = \"{call \" + bar + \"}\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.execute()",
+        "java.sql.PreparedStatement statement = connection.prepareStatement( sql, new String[] {\"Column1\",\"Column2\"} );",
+        "String sql = \"SELECT * from USERS where USERNAME=? and PASSWORD='\"+ bar +\"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)",
+        "String sql = \"SELECT * from USERS where USERNAME='foo' and PASSWORD='\" + bar + \"'\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "statement.executeUpdate( sql, new int[] {1,2} )",
+        "String sql = \"INSERT INTO users (username, password) VALUES ('foo','\"+ bar + \"')\";",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ]
+]

@@ -1,0 +1,2786 @@
+[
+    [
+        "os.write(qrCode.getBytes())"
+    ],
+    [
+        "",
+        "yMes",
+        "ce(\"e",
+        "\t\tString s=(String)images.get(j);"
+    ],
+    [
+        "",
+        "\t\tString s=(String)images.get(j);"
+    ],
+    [
+        "",
+        "\t\tString s=(String)images.get(j);"
+    ],
+    [
+        "",
+        "\t\tString s=(String)images.get(j);"
+    ],
+    [
+        "autocomplete(",
+        "\t\tString s=(String)images.get(j);"
+    ],
+    [
+        "nome1",
+        ""
+    ],
+    [
+        "nome2",
+        "//nome2 = request.getParameter(\"name2\""
+    ],
+    [
+        "nome3",
+        "//nome3 = request.getParameter(\"name3\""
+    ],
+    [
+        "-left",
+        "indirizzo2 = (String)session.getAttrib"
+    ],
+    [
+        "",
+        "nome2 = (String)session.getAttribute(\""
+    ],
+    [
+        "translation",
+        "translation"
+    ],
+    [
+        "axisId",
+        "axisId"
+    ],
+    [
+        "translation",
+        "translation"
+    ],
+    [
+        "axisId",
+        "axisId"
+    ],
+    [
+        "println",
+        "axisId"
+    ],
+    [
+        "println",
+        "positionId",
+        "getParameter"
+    ],
+    [
+        "println",
+        "quizzPart += \"<input type=\\\"hidden\\\" name=\\\"Page\\\" value=\\\"\"+origin+\"\\\">\";",
+        "userId",
+        "origin"
+    ],
+    [
+        "quizzId",
+        "quizzId"
+    ],
+    [
+        "quizzId",
+        "quizzId"
+    ],
+    [
+        "profile",
+        "profile"
+    ],
+    [
+        "profile",
+        "profile"
+    ],
+    [
+        "path",
+        "path"
+    ],
+    [
+        "nameSite",
+        "nameSite"
+    ],
+    [
+        "path",
+        "path"
+    ],
+    [
+        "name",
+        "name"
+    ],
+    [
+        "nameSite",
+        "nameSite"
+    ],
+    [
+        "path",
+        "path"
+    ],
+    [
+        "path",
+        "path"
+    ],
+    [
+        "name",
+        "name"
+    ],
+    [
+        "choice",
+        "choice = org.owasp.encoder.Encode.forUri"
+    ],
+    [
+        "<td class=\"intfdcolor4\"><%=resources.getString(\"ConfirmationSuggestionMessage1\") + \"'<strong>\" +\n        nomSite + \"</strong>' (\" + nomPage + \") \" +\n        resources.getString(\"ConfirmationSuggestionMessage2\") + \"<BR><BR>\"%>",
+        "nomPage",
+        "nomSite"
+    ],
+    [
+        "surveyId",
+        "surveyId"
+    ],
+    [
+        ""
+    ],
+    [
+        "res.getWriter().append(redirect.substring(MANUAL_JSON_RESPONSE_PREFIX.length()))",
+        "String redirect = getDestination(id, context);",
+        "getFullApplicationURL(req) + encodeFilename(attachment.getAttachmentURL())",
+        "request.getServerName()"
+    ],
+    [
+        "targetElementIdHidden",
+        "targetElementIdHidden"
+    ],
+    [
+        "append",
+        "getParameter"
+    ],
+    [
+        "componentId",
+        "componentId"
+    ],
+    [
+        "${param.currentPage == 'userManagement' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'userManagement' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'home' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'home' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'familyManagement' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'familyManagement' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'normManagement' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'normManagement' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'externalFile' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'externalFile' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'webserviceManagement' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'webserviceManagement' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'envManagement' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'envManagement' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'export' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "${param.currentPage == 'export' ? ' font-weight-bold' : ''}"
+    ],
+    [
+        "os.write(StringUtils.toBytesUTF8(str != null ? str : NULL_VALUE))",
+        "str",
+        "str",
+        "@Override",
+        "out.append(DQUOTE).append(entry.getKey())",
+        "Map.Entry<String, Object> entry = it.next();",
+        "map.entrySet().iterator()",
+        "toJsonInternal",
+        "toJsonInternal(new StringBuilderOutput(sb), map)",
+        "toJson",
+        "jsonp.toJson(stateMap)",
+        "Map<String, Object> stateMap = CastUtils.cast((Map<?, ?>)requestState);",
+        "requestState",
+        "@Override",
+        "clientStateManager.toRedirectState(mc, codeRequestState)",
+        "createRedirectState",
+        "createRedirectState(rc, ui, codeRequestState)",
+        "MultivaluedMap<String, String> codeRequestState = toCodeRequestState(rc, ui);",
+        "MultivaluedMap<String, String> state = toRequestState(rc, ui);",
+        "MultivaluedMap<String, String> requestState = new MetadataMap<>();",
+        "ui.getQueryParameters(decodeRequestParameters)"
+    ],
+    [
+        "output.write(buffer, i, 1)",
+        "quoteHtmlChars",
+        "quoteHtmlChars(buffer, bytes, 0, bytes.length)",
+        "byte[] bytes = item.getBytes(StandardCharsets.UTF_8);",
+        "quoteHtmlChars",
+        "HtmlQuoting.quoteHtmlChars(unquoteValue[i])",
+        "String[] unquoteValue = rawRequest.getParameterValues(unquoteName);"
+    ],
+    [
+        "${param.year}"
+    ],
+    [
+        "${param.person}"
+    ],
+    [
+        "out.println( new WebResult( WebResult.STRING_OK, fileUrl, serverObjectId ) )",
+        "request.getParameter( PARAMETER_LOAD )"
+    ],
+    [
+        "out.println( new WebResult( WebResult.STRING_ERROR, message ) )",
+        "request.getParameter( \"name\" )"
+    ],
+    [
+        "out.println( new WebResult( WebResult.STRING_ERROR, message, id ) )",
+        "request.getParameter( \"id\" )"
+    ],
+    [
+        "fw.write(jsonText)",
+        "jsonText"
+    ],
+    [
+        "out.print(text)",
+        "write",
+        "write(buf.toString(), mimeType, Constants.UTF_8)",
+        "writeJsonResponse",
+        "writeJsonResponse(status, content)",
+        "writeJsonResponse",
+        "writeJsonResponse(status, body, sb.toString())",
+        "writeJsonResponse",
+        "writeJsonResponse(status, buf.toString(), err)",
+        "escapeJson(query)",
+        "query = params.getQuery()",
+        "request.getParameter(\"q\")"
+    ],
+    [
+        "os.write((NodeUtils.logts(new Date(now)) + '|' + string + '\\n').getBytes())",
+        "NodeUtils.logts(new Date(now)) + '|' + string + '\\n'",
+        "log",
+        "instance.log(\n                \"PUB|\" + pubid + \"|\" + feedid + \"|\" + requrl + \"|\" + method + \"|\" + ctype + \"|\" + clen + \"|\" + srcip\n                        + \"|\" + user + \"|\" + status)",
+        "logPub",
+        "StatusLog.logPub(pubid, feedid, logurl, req.getMethod(), ctype, data.length(), ip, user,\n                    HttpServletResponse.SC_NO_CONTENT)",
+        "feedid = req.getHeader(\"X-DMAAP-DR-FEED-ID\")",
+        "pubid = req.getHeader(\"X-DMAAP-DR-PUBLISH-ID\")"
+    ],
+    [
+        "mw.write(metadata)",
+        "String metadata = mx.toString();",
+        "String qs = req.getQueryString();"
+    ],
+    [
+        "os.print(req.getUserPrincipal().getName())"
+    ],
+    [
+        "os.print(perm)",
+        "String perm = pathParam(req, \"perm\");",
+        "String rv = req.getParameter(key);"
+    ],
+    [
+        "os.println(sb.toString())",
+        "String perm = pathParam(req, \"perm\");",
+        "String rv = req.getParameter(key);",
+        "req.getUserPrincipal().getName()"
+    ],
+    [],
+    [
+        "<tr><th><%= data.filename %> (revision <%= data.rev[0] %>)</th>",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "<th><%= data.filename %> (revision <%= data.rev[1] %>)</th>",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "<tr><td><img src=\"<%= link %>?<%= QueryParameters.REVISION_PARAM_EQ %><%= data.rev[0] %>\"/>",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "<td><img src=\"<%= link %>?<%= QueryParameters.REVISION_PARAM_EQ %><%= data.rev[1] %>\"/>",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "href=\"<%= link %>?<%= QueryParameters.REVISION_PARAM_EQ %><%= data.rev[0] %>\"><%=",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "data.filename %>(revision <%= data.rev[0] %>)</a> and <a",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "href=\"<%= link %>?<%= QueryParameters.REVISION_PARAM_EQ %><%= data.rev[1] %>\"><%=",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "data.filename %>(revision <%= data.rev[1] %>)</a>.",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "%>  ( <%= data.rev[0] %> )<%",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "%>  ( <%= data.rev[1] %> )<%",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "%>  ( <%= data.rev[0] %> )<%",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "%>  ( <%= data.rev[1] %> )<%",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "<th><%= data.filename %> (<%= data.rev[0] %>)</th>",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "<th><%= data.filename %> (<%= data.rev[1] %>)</th>",
+        "p.substring(j + 1)",
+        "req.getParameter(QueryParameters.REVISION_PARAM + i)"
+    ],
+    [
+        "imgurl",
+        "String imgurl = url +  cfg.getCssDir() + \"/img/icon.png\";",
+        "getHeader"
+    ],
+    [
+        "toString",
+        "ForwardedHost"
+    ],
+    [
+        "htmlize",
+        "requestURL += Prefix.HIST_L + cfg.getPath() + \"#\" + entry.getRevision();",
+        "ForwardedHost"
+    ],
+    [
+        "pw.printf(\n                \"<th class='ui-widget-header'>Request %s (%s %s) by %s - RequestProgressTracker Info</th>%n\",\n                key, ResponseUtil.escapeXml(info.getMethod()),\n                ResponseUtil.escapeXml(info.getPathInfo()), ResponseUtil.escapeXml(info.getUser()))",
+        "final String key = req.getParameter(INDEX);"
+    ],
+    [
+        "",
+        "aughtExceptionHandle",
+        "redirectAttrs.addAttribute(\"loadExperimentButton\", \"loadExperimentButton\");\n        return \"redirect:/experiment/expRepoSelected\";",
+        "Exception e) {",
+        "expPropertiesSet(configExpDto,\n                    user, expDataType, grammarFilePath)",
+        "configExpDto"
+    ],
+    [
+        "bOutput.write(deployEnvScript.getBytes())",
+        "String deployEnvScript=util.getEnvFileDetails(dBean);",
+        "createCompositeSolutionZip",
+        "createCompositeSolutionZip(dBean)",
+        "compositeSolutionDetails",
+        "kubeService.compositeSolutionDetails(dBean, solutionToolKitType)",
+        "solutionId"
+    ],
+    [
+        "bOutput.write(deployEnvScript.getBytes())",
+        "String deployEnvScript=util.getEnvFileDetails(dBean);",
+        "createSingleSolutionZip",
+        "createSingleSolutionZip(dBean)",
+        "singleSolutionDetails",
+        "kubeService.singleSolutionDetails(dBean, imageTag, singleModelPort, solutionToolKitType)",
+        "solutionId"
+    ],
+    [
+        "file.write(jsonString)",
+        "createJsonFile",
+        "storageService.createJsonFile(json, userId)",
+        "json"
+    ],
+    [
+        "writer.write(result)",
+        "result"
+    ],
+    [
+        "fout.write(new SimpleDateFormat(\"yyyy.MM.dd.HH.mm.ss\").format(new Date()) + \"  \" + logType + \"  \"\n\t\t\t\t\t\t\t+ msg + \"\\n\")",
+        "addLogs",
+        "UtilityFunction.addLogs(msg, OnboardingConstants.lOG_TYPE_DEBUG)",
+        "debug",
+        "logger.debug( \"dockerImageUri: \" + dockerImageUri)",
+        "modelName = mData.getModelName()",
+        "modName"
+    ],
+    [
+        "\t\t\t",
+        " if(b.g",
+        "",
+        "Delete",
+        "p:forwa",
+        "",
+        ""
+    ],
+    [
+        "pw.println(\"Applied AC Tool config from \" + reqParams.configurationRootPath + \":\\n\" + msg)",
+        "reqParams.configurationRootPath",
+        "reqParams.configurationRootPath",
+        "reqParams.configurationRootPath",
+        "reqParams.configurationRootPath",
+        "String configRootPath = getParam(req, AcToolUiService.PARAM_CONFIGURATION_ROOT_PATH,\n                    ((AcInstallationServiceImpl) acInstallationService).getConfiguredAcConfigurationRootPath());",
+        "StringUtils.trim(result)",
+        "String result = req.getParameter(name);"
+    ],
+    [
+        "pw.println(\"Error while applying AC Tool config from \" + reqParams.configurationRootPath)",
+        "reqParams.configurationRootPath",
+        "reqParams.configurationRootPath",
+        "reqParams.configurationRootPath",
+        "String configRootPath = getParam(req, AcToolUiService.PARAM_CONFIGURATION_ROOT_PATH,\n                    ((AcInstallationServiceImpl) acInstallationService).getConfiguredAcConfigurationRootPath());",
+        "StringUtils.trim(result)",
+        "String result = req.getParameter(name);"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "${(param.linkTypeVar eq 2)?'class=\"active\"':''}"
+    ],
+    [
+        "${(param.linkTypeVar eq 2)?'class=\"active\"':''}"
+    ],
+    [
+        "${(param.linkTypeVar eq 2)?'class=\"active\"':''}"
+    ],
+    [
+        "${(param.linkTypeVar eq 3)?'class=\"active\"':''}"
+    ],
+    [
+        "${(param.linkTypeVar eq 3)?'class=\"active\"':''}"
+    ],
+    [
+        "${(param.linkTypeVar eq 3)?'class=\"active\"':''}"
+    ],
+    [
+        "${(param.linkTypeVar eq 5)?'class=\"active\"':''}"
+    ],
+    [
+        "${(param.linkTypeVar eq 5)?'class=\"active\"':''}"
+    ],
+    [
+        "${(param.linkTypeVar eq 5)?'class=\"active\"':''}"
+    ],
+    [
+        "${(param.linkTypeVar eq 1)?'class=\"active\"':''}"
+    ],
+    [
+        "${(param.linkTypeVar eq 2)?'class=\"active\"':''}"
+    ],
+    [
+        "${(param.linkTypeVar eq 3)?'class=\"active\"':''}"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "fileWriter.write(content)",
+        "writeFile",
+        "FileUtils.writeFile(configFile, configAsString)",
+        "saveSetupConfig",
+        "configurationService.saveSetupConfig(configAsString)",
+        "saveAndPrepareSetup",
+        "setupService.saveAndPrepareSetup(configAsString)",
+        "configAsString"
+    ],
+    [
+        "out.write(k)",
+        "write",
+        "write(keys)",
+        "handleUpdate",
+        "handleUpdate(\n                req.getParameter(\"k\"),\n                req.getParameter(\"c\") != null,\n                Integer.parseInt(req.getParameter(\"t\")))",
+        "req.getParameter(\"k\")"
+    ],
+    [
+        "writer.print(msg)",
+        "print",
+        "print(verbosity, msg, false)",
+        "print",
+        "print(verbosity, msg + lineSeparator)",
+        "println",
+        "println(Verbosity.NORMAL, msg)",
+        "println",
+        "se {"
+    ],
+    [
+        "${context}",
+        "\"seckill/payByQrcode\"",
+        "QRfilePath"
+    ],
+    [
+        "${QRfilePath}",
+        "\"seckill/payByQrcode\"",
+        "QRfilePath"
+    ],
+    [
+        "h:utext=",
+        "modelAndView",
+        "richiesta",
+        "@RequestMapping(value=\"/login\", method = RequestMethod.POST)"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "",
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        ""
+    ],
+    [
+        "out.println(\"|\"+mappings.getProperty(\"submitter\",\"Submitter\") + \"|\" + submitter )",
+        "submitter = wup.getName()"
+    ],
+    [
+        "\"<tr>\"+\n                   getMonthNaviLink(prevCal,\"&lt;&lt;\", queryString)+\n                   \"<td colspan=5 class=\\\"month\\\">\"+\n                   getMonthLink( cal )+\n                   \"</td>\"+\n                   getMonthNaviLink(nextCal,\"&gt;&gt;\", queryString)+ \n                   \"</tr>\\n\"",
+        "final String queryString = HttpUtil.safeGetQueryString( httpServletRequest, engine.getContentEncoding() );",
+        "String res = request.getQueryString();"
+    ],
+    [
+        "${logged_in_username}",
+        "model",
+        "String name = auth.getName();"
+    ],
+    [
+        "${logoutUrl}",
+        "model",
+        "String name = auth.getName();"
+    ],
+    [
+        "${_csrf.token}",
+        "model",
+        "String name = auth.getName();"
+    ],
+    [
+        "${_csrf.parameterName}",
+        "model",
+        "String name = auth.getName();"
+    ],
+    [
+        "${mailError}",
+        "\"registereduser/profile\"",
+        "UserModelTransformer.transform(user)",
+        "UserDto userDto = new UserDto();",
+        "auth.getName()"
+    ],
+    [
+        "${fullNameError}",
+        "\"registereduser/profile\"",
+        "UserModelTransformer.transform(user)",
+        "UserDto userDto = new UserDto();",
+        "auth.getName()"
+    ],
+    [
+        "response.getWriter().write( \"{\\\"success\\\": 1, \\\"message\\\":\\\"上传成功\\\",\\\"url\\\":\\\"\" + UPLOAD_IMAGE_PATH + File.separator + fileName + \"\\\"}\" )",
+        "String fileName = attach.getOriginalFilename();"
+    ],
+    [
+        "out.print(\"<body align=center><h1><font color=green>Login Success, Welcome \"+username+\"</font><body><br/><br/><br/><a href=index.jsp>Logout</a><br/>\")",
+        "String username=request.getParameter(\"username\");"
+    ],
+    [
+        "writer.println(str)",
+        "out",
+        "out(city, resp)",
+        "city = \"<option selected id = \\\"selected\\\" value =\"\n                            + cityid + \">\"\n                            + city\n                            + \"</option>\"",
+        "String cityid = req.getParameter(\"cityid\");"
+    ],
+    [
+        "out.print(ristorante+piatto+ricetta+prezzo+vegano+celiaco);",
+        "celiaco",
+        "vegano",
+        "prezzo",
+        "ricetta",
+        "piatto",
+        "ristorante"
+    ],
+    [
+        "out.print(imageUrl)",
+        "imageUrl = imageUrl.substring(imageUrl.indexOf(FileManager.staticPath))",
+        "imageUrl = FileManager.fileSystemStorageSimulation + '\\\\' + newFileName",
+        "String filename = filePart.getName();",
+        "userAccount.getEmail()",
+        "String email = request.getParameter(\"email\");"
+    ],
+    [
+        "os.write(flushString.getBytes(StandardCharsets.UTF_8))",
+        "String flushString = buffer.toString();",
+        "buffer",
+        "loadMessage",
+        "loadMessage()",
+        "getMimeMessage",
+        "message.getMimeMessage()",
+        "appendBodyStructure",
+        "appendBodyStructure(buffer, messageWrapper)",
+        "bodyPart.getDescription()"
+    ],
+    [
+        "out.print(ristorante+piatto+ricetta+prezzo+vegano+celiaco);",
+        "celiaco",
+        "vegano",
+        "prezzo",
+        "ricetta",
+        "piatto",
+        "ristorante"
+    ],
+    [
+        "return \"no existe ciecode con ese id \";",
+        " \";",
+        "Comorbid comorbid",
+        "form1"
+    ],
+    [
+        "return principal.getName();"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "out.print(ristorante+piatto+ricetta+prezzo+vegano+celiaco);",
+        "celiaco",
+        "vegano",
+        "prezzo",
+        "ricetta",
+        "piatto",
+        "ristorante"
+    ],
+    [
+        "",
+        ";"
+    ],
+    [
+        "ry  {",
+        ""
+    ],
+    [
+        "ostMapping(value = C",
+        ""
+    ],
+    [
+        "ile f = new File(\"Te",
+        ""
+    ],
+    [
+        "blic void addCourses",
+        "ER);"
+    ],
+    [
+        "datasetID",
+        "datasetID = request.getParameter(\"id\");"
+    ],
+    [
+        "datasetLabel",
+        "datasetLabel = request.getParameter(\"label\");"
+    ],
+    [
+        "datasetID",
+        "datasetID = request.getParameter(\"id\");"
+    ],
+    [
+        "documentID",
+        "documentID = request.getParameter(\"OBJECT_ID\");"
+    ],
+    [
+        "documentLabel",
+        "documentLabel = request.getParameter(\"OBJECT_LABEL\");"
+    ],
+    [
+        "oldEncMethodMessage",
+        "oldEncMethodMessage"
+    ],
+    [
+        "writer.println(\"Translated Path = [\" + request.getPathTranslated() + \"]\")",
+        "request.getPathTranslated()"
+    ],
+    [
+        "writer.println(\"Query           = [\" + query + \"]\")",
+        "query = URLDecoder.decode(request.getQueryString(),\"UTF-8\")",
+        "request.getQueryString()"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "listenerType",
+        "listenerType=(String)request.getParameter(\"listenertype\");"
+    ],
+    [
+        "folderId",
+        "folderId"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "datasourceId",
+        "datasourceId"
+    ],
+    [
+        "datasourceId",
+        "datasourceId"
+    ],
+    [
+        "initialSelections",
+        "initialSelections"
+    ],
+    [
+        "sbiExecutionID",
+        "sbiExecutionID = request.getParameter(\"SBI_EXECUTION_ID\" );"
+    ],
+    [
+        "mode",
+        "mode = request.getParameter(\"mode\");"
+    ],
+    [
+        "engine",
+        "engine = request.getParameter(\"ENGINE\");"
+    ],
+    [
+        "sbiExecutionID",
+        "sbiExecutionID = request.getParameter(\"SBI_EXECUTION_ID\" );"
+    ],
+    [
+        "mode",
+        "mode = request.getParameter(\"mode\");"
+    ],
+    [
+        "engine",
+        "engine = request.getParameter(\"ENGINE\");"
+    ],
+    [
+        "schemaID",
+        "schemaID = request.getParameter(\"schemaID\");"
+    ],
+    [
+        "schemaName",
+        "schemaName = request.getParameter(\"schemaName\");"
+    ],
+    [
+        "cubeName",
+        "cubeName = request.getParameter(\"cubeName\");"
+    ],
+    [
+        "currentContentId",
+        "currentContentId = request.getParameter(\"currentContentId\");"
+    ],
+    [
+        "editModeCurrentContentId",
+        "editModeCurrentContentId = request.getParameter(\"SBI_ARTIFACT_VERSION_ID\");"
+    ],
+    [
+        "<th><input type='text' name='ArraySQL' value=\"<%=arraySQL%>\" size=\"45\"></th>",
+        "int textSize     = getNum(request.getParameter(\"TextSize\"), \"0\");"
+    ],
+    [
+        "<th><input type='text' name='ArraySQL' value=\"<%=arraySQL%>\" size=\"45\"></th>",
+        "int textSize     = getNum(request.getParameter(\"TextSize\"), \"0\");"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "<th><input type='text' name='ArraySQL' value=\"<%=arraySQL%>\" size=\"45\"></th>",
+        "int textSize     = getNum(request.getParameter(\"TextSize\"), \"0\");"
+    ],
+    [
+        "datasourceId",
+        "datasourceId"
+    ],
+    [
+        "bmId",
+        "bmId"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "var sbiExecutionId = <%=request.getParameter(\"SBI_EXECUTION_ID\")!=null? \"'\"+request.getParameter(\"SBI_EXECUTION_ID\")+\"'\" : \"null\"%>;"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "<th><input type='text' name='ArraySQL' value=\"<%=arraySQL%>\" size=\"45\"></th>",
+        "int textSize     = getNum(request.getParameter(\"TextSize\"), \"0\");"
+    ],
+    [
+        "isUserTechnical",
+        "isUserTechnical"
+    ],
+    [
+        "datasetLabel",
+        "datasetLabel"
+    ],
+    [
+        "SBI_EXECUTION_ID: <%= request.getParameter(\"SBI_EXECUTION_ID\")!=null?\"'\" + request.getParameter(\"SBI_EXECUTION_ID\") +\"'\": \"null\" %> ,"
+    ],
+    [
+        "SBI_EXECUTION_ID: <%= request.getParameter(\"SBI_EXECUTION_ID\")!=null?\"'\" + request.getParameter(\"SBI_EXECUTION_ID\") +\"'\": \"null\" %> ,"
+    ],
+    [
+        "docId",
+        "docId = request.getParameter(\"document\");"
+    ],
+    [
+        "var sbiExecutionId = <%=request.getParameter(\"SBI_EXECUTION_ID\")!=null? \"'\"+request.getParameter(\"SBI_EXECUTION_ID\")+\"'\" : \"null\"%>;"
+    ],
+    [
+        "docLabelComositeDoc",
+        "docLabelComositeDoc = request.getParameter(EngineConstants.DOC_LABEL);"
+    ],
+    [
+        "config.params.SBI_EXECUTION_ID=<%=request.getParameter(\"SBI_EXECUTION_ID\")!=null? \"'\"+request.getParameter(\"SBI_EXECUTION_ID\")+\"'\" : \"null\"%>;"
+    ],
+    [
+        "config.params.SBI_EXECUTION_ID=<%=request.getParameter(\"SBI_EXECUTION_ID\")!=null? \"'\"+request.getParameter(\"SBI_EXECUTION_ID\")+\"'\" : \"null\"%>;"
+    ],
+    [
+        "config.params.SBI_EXECUTION_ID=<%=request.getParameter(\"SBI_EXECUTION_ID\")!=null? \"'\"+request.getParameter(\"SBI_EXECUTION_ID\")+\"'\" : \"null\"%>;"
+    ],
+    [
+        "<th><input type='text' name='ArraySQL' value=\"<%=arraySQL%>\" size=\"45\"></th>",
+        "int textSize     = getNum(request.getParameter(\"TextSize\"), \"0\");"
+    ],
+    [
+        "folderId",
+        "folderId"
+    ],
+    [
+        "folderId",
+        "folderId"
+    ],
+    [
+        "selectedLayerProp",
+        "selectedLayerProp = request.getParameter(\"SELECTEDLAYERPROP\");"
+    ],
+    [
+        "selectedLayer",
+        "selectedLayer = request.getParameter(\"SELECTEDLAYER\");"
+    ],
+    [
+        "multivalueFlag",
+        "multivalueFlag = request.getParameter(\"MULTIVALUE\");"
+    ],
+    [
+        "objectId",
+        "objectId"
+    ],
+    [
+        "var defaultFoldersId = '<%=defaultFoldersId != null ? defaultFoldersId : \"\"%>';",
+        "defaultFoldersId"
+    ],
+    [
+        "'OBJECT_ID' : \t\t\t'<%=request.getParameter(\"OBJECT_ID\") != null\n\t\t\t\t\t? request.getParameter(\"OBJECT_ID\")\n\t\t\t\t\t: aRequestContainer.getServiceRequest().getAttribute(\"OBJECT_ID\")%>', ",
+        "getParameter"
+    ],
+    [
+        "'OBJECT_LABEL' : \t\t'<%=request.getParameter(\"OBJECT_LABEL\") != null\n\t\t\t\t\t? request.getParameter(\"OBJECT_LABEL\")\n\t\t\t\t\t: aRequestContainer.getServiceRequest().getAttribute(\"OBJECT_LABEL\")%>',",
+        "getParameter"
+    ],
+    [
+        "'isSourceDocument' : \t'<%=request.getParameter(\"IS_SOURCE_DOCUMENT\") != null\n\t\t\t\t\t? request.getParameter(\"IS_SOURCE_DOCUMENT\")\n\t\t\t\t\t: aRequestContainer.getServiceRequest().getAttribute(\"IS_SOURCE_DOCUMENT\")%>',",
+        "getParameter"
+    ],
+    [
+        "'EDIT_MODE': '<%=request.getParameter(\"EDIT_MODE\") != null\n\t\t\t\t\t? request.getParameter(\"EDIT_MODE\")\n\t\t\t\t\t: aRequestContainer.getServiceRequest().getAttribute(\"EDIT_MODE\")%>',",
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "isForExport",
+        "isForExport = (String)(request.getParameter(SpagoBIConstants.IS_FOR_EXPORT));"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "federationID",
+        "federationID = request.getParameter(\"id\");"
+    ],
+    [
+        "value",
+        "value=request.getParameter(\"DOCUMENT\");"
+    ],
+    [
+        "label",
+        "label=request.getParameter(\"LABEL\");"
+    ],
+    [
+        "parameter1",
+        "parameter1=request.getParameter(\"DATASET\");"
+    ],
+    [
+        "jobGroup",
+        "jobGroup = request.getParameter(\"JOB_GROUP\");"
+    ],
+    [
+        "triggerGroup",
+        "triggerGroup = request.getParameter(\"TRIGGER_GROUP\");"
+    ],
+    [
+        "jobName",
+        "jobName = request.getParameter(\"JOB_NAME\");"
+    ],
+    [
+        "triggerName",
+        "triggerName = request.getParameter(\"TRIGGER_NAME\");"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "var initialOptionMainMenu = '<%=initialOptionMainMenu != null ? initialOptionMainMenu : \"\"%>';",
+        "initialOptionMainMenu"
+    ],
+    [
+        "userId",
+        "userId"
+    ],
+    [
+        "listenerType",
+        "listenerType=(String)request.getParameter(\"listenertype\");"
+    ],
+    [
+        "out.write(content)",
+        "attachContent",
+        "attachContent(conn, doc.getContentInJson())",
+        "attachDocument",
+        "attachDocument(conn, document)",
+        "createDocumentWithId",
+        "createDocumentWithId(indexName, document)",
+        "createDocument",
+        "documentStore.createDocument(index, document, implicitlyCreateIndex(headers))",
+        "processPost",
+        "documentApi.processPost(requestBody, request, headers, httpResponse, index, documentStore)",
+        "requestBody"
+    ],
+    [
+        "getParameter"
+    ],
+    [
+        "content",
+        "@Override"
+    ],
+    [
+        "sos.println(\"Content-Type: \" + contentType)",
+        "processRequest",
+        "new MediaDeliveryService().processRequest(request, response, file.toAbsolutePath().toString(), mimeType)",
+        "serveMediaContent",
+        "serveMediaContent(\"audio\", format, pi, filename)",
+        "format"
+    ],
+    [
+        "sos.println(\"Content-Type: \" + contentType)",
+        "processRequest",
+        "new MediaDeliveryService().processRequest(request, response, file.toAbsolutePath().toString(), mimeType)",
+        "type"
+    ],
+    [
+        "response.getWriter().write(deleted + \" cache elements belonging to '\" + identifier + \"' deleted.\")",
+        "identifier = values[0]",
+        "String[] values = request.getParameterMap().get(s);",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = new String( param.getBytes() )",
+        "param.getBytes()",
+        "String param = request.getParameter(\"BenchmarkTest00390\");"
+    ],
+    [
+        "response.getWriter().printf(bar,obj)",
+        "bar = new String( param.getBytes() )",
+        "param.getBytes()",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00473\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "bar = new String( param.getBytes() )",
+        "param.getBytes()",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00478\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "bar = new String( param.getBytes() )",
+        "param.getBytes()",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "bar = new String( param.getBytes() )",
+        "param.getBytes()",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar};"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,param,obj)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().format(param,obj)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().printf(param,obj)",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00030\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().write(param.toCharArray(),0,length)",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().write(param, 0, length)",
+        "String param = scr.getTheParameter(\"BenchmarkTest00041\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().format(param,obj)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().print(param.toCharArray())",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().write(\"Parameter value: \" + param)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "bar = (String)map17589.get(\"keyB-17589\")",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "bar = sbxyz67327.replace(param.length()-\"Z\".length(), param.length(),\"Z\").toString()",
+        "String bar = param;",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar};",
+        "request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar};"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "bar = param",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = (String)map96050.get(\"keyB-96050\")",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = param",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = thing.doSomething(param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "bar = param",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = param;",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "String bar = param;",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "String bar = sbxyz73567.append(\"_SafeStuff\").toString();",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "bar = param.substring(0,param.length()-1)",
+        "String bar = param;",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(bar, 0, length)",
+        "bar = param.substring(0,param.length()-1)",
+        "String bar = param;",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(\"Parameter value: \" + bar)",
+        "bar = (String)map16074.get(\"keyB-16074\")",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "String bar = sbxyz85125.append(\"_SafeStuff\").toString();",
+        "String param = request.getParameter(\"BenchmarkTest00378\");"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "bar = param",
+        "bar = param",
+        "String param = request.getParameter(\"BenchmarkTest00380\");"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "bar = valuesList.get(0)",
+        "String param = request.getParameter(\"BenchmarkTest00382\");"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "String bar = thing.doSomething(param);",
+        "String param = request.getParameter(\"BenchmarkTest00384\");"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "String param = request.getParameter(\"BenchmarkTest00387\");"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = sbxyz30382.append(\"_SafeStuff\").toString();",
+        "String param = request.getParameter(\"BenchmarkTest00388\");"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "bar = sbxyz38384.replace(param.length()-\"Z\".length(), param.length(),\"Z\").toString()",
+        "String bar = param;",
+        "String param = request.getParameter(\"BenchmarkTest00392\");"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "bar = (String)map88136.get(\"keyB-88136\")",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00467\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00475\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = sbxyz54686.append(\"_SafeStuff\").toString();",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00477\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().write(\"Parameter value: \" + bar)",
+        "String bar = thing.doSomething(param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00492\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "bar = param",
+        "bar = param",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "bar = valuesList.get(0)",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = param;",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = (String)map63597.get(\"keyB-63597\")",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = param",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "bar = valuesList.get(0)",
+        "String param = scr.getTheParameter(\"BenchmarkTest00642\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "String bar = sbxyz31207.append(\"_SafeStuff\").toString();",
+        "String param = scr.getTheParameter(\"BenchmarkTest00643\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "String bar = thing.doSomething(param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest00645\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().write(bar, 0, length)",
+        "bar = param",
+        "String param = scr.getTheParameter(\"BenchmarkTest00651\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().write(\"Parameter value: \" + bar)",
+        "bar = (7*42) - num > 200 ? \"This should never happen\" : param",
+        "String param = scr.getTheParameter(\"BenchmarkTest00656\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "String bar = thing.doSomething(param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00719\");"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "bar = param",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00720\");"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = param",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00724\");"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = param.substring(0,param.length()-1)",
+        "String bar = param;",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00727\");"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00728\");"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "String bar = thing.doSomething(param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00729\");"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "String bar = param;",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = param;",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = sbxyz12823.append(\"_SafeStuff\").toString();",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "bar = valuesList.get(0)",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().printf(bar,obj)",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = sbxyz36624.append(\"_SafeStuff\").toString();",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "bar = param",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().write(\"Parameter value: \" + bar)",
+        "bar = param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar};"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01253\");"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01257\");"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01262\");"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01263\");"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01267\");"
+    ],
+    [
+        "response.getWriter().write(\"Parameter value: \" + bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01284\");"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01337\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01346\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01349\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01350\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().write(\"Parameter value: \" + bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01506\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01507\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().printf(bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01512\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().write(\"Parameter value: \" + bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01525\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };",
+        "request.getParameterValues(\"BenchmarkTest01583\")"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01584\");"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01587\");"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().printf(bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01590\");"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01592\");"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01594\");"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01597\");"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().printf(bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().printf(bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar};"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(bar, 0, length)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02124\");"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02127\");"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02128\");"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar};",
+        "request.getParameter(\"BenchmarkTest02130\")"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02131\");"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02133\");"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02134\");"
+    ],
+    [
+        "response.getWriter().write(bar, 0, length)",
+        "String bar = doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest02136\");"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02225\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02227\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02228\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar};"
+    ],
+    [
+        "response.getWriter().printf(bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02232\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().printf(bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02234\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02241\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02397\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02399\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02402\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02405\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02407\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().write(bar, 0, length)",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02409\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().write(bar, 0, length)",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02410\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02480\");"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02483\");"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar};"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().printf(bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02489\");"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02493\");"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02494\");"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().write(\"Parameter value: \" + bar)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "String param = request.getParameter(\"BenchmarkTest00393\");"
+    ],
+    [
+        "response.getWriter().format(bar,obj)",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00469\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest00476\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = param",
+        "bar = param",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "bar = param",
+        "bar = param",
+        "names.hasMoreElements()",
+        "param = name",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().printf(bar,obj)",
+        "bar = param",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest00723\");"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().write(bar, 0, length)",
+        "bar = (7*18) + num > 200 ? \"This_should_always_happen\" : param",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = request.getHeader(\"Referer\")"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar};"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = headers.nextElement()",
+        "request.getHeaders(\"Referer\")"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01252\");"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01256\");"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = request.getParameter(\"BenchmarkTest01265\");"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01336\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01344\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest01345\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar};"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01508\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "String bar = new Test().doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest01513\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01588\");"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = new Test().doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest01593\");"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().format(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar};"
+    ],
+    [
+        "out.format(java.util.Locale.US,\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { \"a\", bar };"
+    ],
+    [
+        "response.getWriter().printf(\"Formatted like: %1$s and %2$s.\",obj)",
+        "Object[] obj = { bar, \"b\"};"
+    ],
+    [
+        "response.getWriter().format(java.util.Locale.US,bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02222\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02226\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02235\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02236\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().write(bar)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = map.get(\"BenchmarkTest02240\");",
+        "map.isEmpty()",
+        "request.getParameterMap()"
+    ],
+    [
+        "response.getWriter().print(bar)",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray(),0,length)",
+        "String bar = doSomething(request, param);",
+        "param = name",
+        "names.hasMoreElements()",
+        "String name = (String) names.nextElement();",
+        "request.getParameterNames()"
+    ],
+    [
+        "response.getWriter().printf(java.util.Locale.US,bar,obj)",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02404\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().println(bar)",
+        "String bar = doSomething(request, param);",
+        "String param = scr.getTheParameter(\"BenchmarkTest02406\");",
+        "request.getParameter(p)"
+    ],
+    [
+        "response.getWriter().print(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02482\");"
+    ],
+    [
+        "response.getWriter().write(bar, 0, length)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02495\");"
+    ],
+    [
+        "response.getWriter().write(\"Parameter value: \" + bar)",
+        "String bar = doSomething(request, param);",
+        "param = values[0]",
+        "String[] values = request.getParameterValues(\"BenchmarkTest02509\");"
+    ],
+    [
+        "response.getWriter().printf(bar,obj)",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().println(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ],
+    [
+        "response.getWriter().write(bar.toCharArray())",
+        "String bar = doSomething(request, param);",
+        "param = java.net.URLDecoder.decode(param, \"UTF-8\")",
+        "param = queryString.substring(paramLoc + paramval.length(), ampersandLoc)",
+        "request.getQueryString()"
+    ]
+]
